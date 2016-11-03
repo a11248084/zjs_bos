@@ -1,0 +1,22 @@
+package com.itheima.bos.service.base;
+
+import com.itheima.bos.domain.Staff;
+import com.itheima.bos.utils.PageBean;
+
+/**
+ * Created by Renhai on 2016/10/31.
+ */
+public interface IStaffService {
+    void save(Staff model);
+
+    void pageQuery(PageBean pageBean);
+
+    void delete(String ids);
+
+    void restore(String ids);
+
+
+    Staff findById(String id);
+
+    void update(Staff staff);
+}

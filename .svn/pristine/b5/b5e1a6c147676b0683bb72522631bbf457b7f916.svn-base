@@ -1,0 +1,17 @@
+package com.itheima.bos.web.action;
+
+import com.itheima.bos.domain.Decidedzone;
+import com.itheima.bos.web.action.base.BaseAction;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Controller;
+
+/**
+ * Created by Renhai on 2016/11/3.
+ */
+@Controller
+@Scope("prototype")
+public class DecidedzoneAction extends BaseAction<Decidedzone> {
+
+
+}
+

@@ -1,0 +1,13 @@
+package com.itheima.bos.service.base;
+
+import com.itheima.bos.domain.User;
+
+/**
+ * Created by Renhai on 2016/10/30.
+ */
+public interface IUserService {
+    User login(User model);
+
+    void editPassword(String id,String password);
+
+}

@@ -1,0 +1,57 @@
+package com.itheima.bos.web.action.base;
+
+import com.itheima.bos.service.base.IStaffService;
+import com.itheima.bos.service.base.IUserService;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+import org.apache.struts2.ServletActionContext;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
+/**
+ * Created by Renhai on 2016/10/30.
+ */
+public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
+
+    //request
+    protected  HttpServletRequest request= ServletActionContext.getRequest();
+    //response
+    protected HttpServletResponse response=ServletActionContext.getResponse();
+    //声明对象
+    protected T model;
+
+    //使用注解方式注入属性
+    @Resource
+    protected IUserService userService;
+
+    @Resource
+    protected IStaffService staffService;
+
+    //在构造方法中动态或的实体类的类型,并通过反射实例化对象
+    public BaseAction() {
+        //获取父类类型
+        ParameterizedType generciSuperClass = (ParameterizedType)this.getClass().getGenericSuperclass();
+        //获取实际类型参数
+        Type[] actualTypeArguments = generciSuperClass.getActualTypeArguments();
+        //实体类型
+        Class<T> aClass = (Class<T>) actualTypeArguments[0];
+        try {
+            model= aClass.newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Override
+    public T getModel() {
+        return model;
+    }
+
+}

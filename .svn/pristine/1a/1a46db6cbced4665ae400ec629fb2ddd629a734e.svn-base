@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--开发者模式-->
+    <constant name="struts.devMode" value="false" />
+    <!-- 指定struts2框架中的Action对象由spring工厂负责创建 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <!--配置国际化文件-->
+    <constant name="struts.custom.i18n.resources" value="message"/>
+
+<package name="zjs_bos" extends="struts-default">
+
+    <!--配置拦截器-->
+    <interceptors>
+        <interceptor name="loginInterceptor" class="com.itheima.bos.web.interceptor.loginInterceptor">
+            <param name="excludeMethods">login</param>
+        </interceptor>
+        <interceptor-stack name="bos">
+            <interceptor-ref name="loginInterceptor"/>
+            <interceptor-ref name="defaultStack"/>
+        </interceptor-stack>
+    </interceptors>
+
+    <default-interceptor-ref name="bos"/>
+
+    <global-results>
+        <result name="login">/login.jsp</result>
+    </global-results>
+    <!-- 需要进行权限控制的页面访问 -->
+    <action name="page_*_*">
+        <result type="dispatcher">/WEB-INF/pages/{1}/{2}.jsp</result>
+    </action>
+    
+    <!--配置用户action模块-->
+    <action name="userAction_*" class="userAction" method="{1}">
+        <result name="home">/WEB-INF/pages/common/index.jsp</result>
+    </action>
+
+
+    <!--配置取派员Staff模块-->
+    <action name="staffAction_*" class="staffAction" method="{1}">
+        <result name="list">/WEB-INF/pages/base/staff.jsp</result>
+    </action>
+</package>
+
+
+</struts>

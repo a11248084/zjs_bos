@@ -1,0 +1,7 @@
+package com.itheima.bos.service.base;
+
+/**
+ * Created by Renhai on 2016/11/3.
+ */
+public interface IDecidedzoneService {
+}

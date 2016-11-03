@@ -57,4 +57,14 @@
     <context:annotation-config/>
     <!--支持事务注解-->
     <tx:annotation-driven transaction-manager="transcationManager"/>
+
+
+    <!--配置远程服务的代理对象-->
+    <bean id="customerService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+        <!--注入接口类型-->
+        <property name="serviceInterface" value="com.itheima.bos.service.base.CustomerService"/>
+        <!--注入服务的url地址-->
+        <property name="serviceUrl" value="http://localhost:8080/crm/remoting/customer"/>
+    </bean>
+
 </beans>

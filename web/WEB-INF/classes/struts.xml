@@ -57,6 +57,10 @@
 
     <!--subarea分区模块的action-->
     <action name="decidedzoneAction_*" class="decidedzoneAction" method="{1}">
+        <result name="list">/WEB-INF/pages/base/decidedzone.jsp</result>
+    </action>
+    
+    <action name="testAction_*" class="testAction" method="{1}">
 
     </action>
 </package>
