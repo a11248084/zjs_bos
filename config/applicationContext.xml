@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+   <!-- 数据源 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///zjs_bos"/>
+        <property name="user" value="zjs_user"/>
+        <property name="password" value="123"/>
+    </bean>
+
+
+
+    <!--配置事务管理器-->
+    <bean name="transcationManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+
+    </bean>
+    <!--
+     配置sessionFactory
+     -->
+    <bean name="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+
+        <property name="hibernateProperties" >
+            <props>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hbm2ddl.auto">update</prop>
+            </props>
+        </property>
+
+        <property name="mappingDirectoryLocations">
+            <list>
+                <value>classpath:com/itheima/bos/domain</value>
+            </list>
+        </property>
+    </bean>
+    <!--组件扫描-->
+    <context:component-scan base-package="com.itheima.bos"/>
+    <!-- 支持spring注解(引入spring提供的注解解析器) -->
+    <context:annotation-config/>
+    <!--支持事务注解-->
+    <tx:annotation-driven transaction-manager="transcationManager"/>
+</beans>
