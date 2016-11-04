@@ -4,7 +4,6 @@ import com.sober.bos.service.base.*;
 import com.sober.bos.utils.PageBean;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import com.sober.bos.utils.PageBean;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
@@ -47,6 +46,9 @@ public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
     @Resource
     protected IDecidedzoneService decidedzoneService;
 
+
+    @Resource
+    protected INoticebillService INoticebillService;
     //利用属性驱动获取分页工具条自动传递过来的page(当前页) 和rows(每页查询的条数)
     protected int page;
     protected int rows;
@@ -115,12 +117,29 @@ public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
 
 
     //写回list集合的json数据
-    public void writeList2Json(List list, String[] excludes){
+    public void writeList2Json(List list, String[] excludes) {
+        //查询之后向页面返回数据  数据类型为json格式
+        JsonConfig jsonConfig = new JsonConfig();
+        jsonConfig.setExcludes(excludes);
+        JSONArray jsonArray = JSONArray.fromObject(list, jsonConfig);
+        String json = jsonArray.toString();
+        //将json数据通过输出流写到客户端
+        response.setContentType("text/json;charset=utf-8");
+        try {
+            response.getWriter().print(json);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+        //写回object对象的json数据
+    public void writeObjcet2Json(Object object, String[] excludes){
         //查询之后向页面返回数据  数据类型为json格式
         JsonConfig jsonConfig=new JsonConfig();
         jsonConfig.setExcludes(excludes);
-        JSONArray jsonArray  = JSONArray.fromObject(list, jsonConfig);
-        String json = jsonArray.toString();
+        JSONObject jsonObject  = JSONObject.fromObject(object,jsonConfig);
+        String json = jsonObject.toString();
         //将json数据通过输出流写到客户端
         response.setContentType("text/json;charset=utf-8");
         try {

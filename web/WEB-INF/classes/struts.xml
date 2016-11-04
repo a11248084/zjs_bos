@@ -15,7 +15,7 @@
 
     <!--配置拦截器-->
     <interceptors>
-        <interceptor name="loginInterceptor" class="com.itheima.bos.web.interceptor.loginInterceptor">
+        <interceptor name="loginInterceptor" class="com.sober.bos.web.interceptor.loginInterceptor">
             <param name="excludeMethods">login</param>
         </interceptor>
         <interceptor-stack name="bos">
@@ -59,9 +59,16 @@
     <action name="decidedzoneAction_*" class="decidedzoneAction" method="{1}">
         <result name="list">/WEB-INF/pages/base/decidedzone.jsp</result>
     </action>
-    
-    <action name="testAction_*" class="testAction" method="{1}">
 
+    <!--Workbill工作单模块的action-->
+    <action name="workbillAction_*" class="workbillAction" method="{1}">
+
+    </action>
+
+    <!--Noticebill工作单模块的action-->
+    <action name="noticebillAction_*" class="noticebillAction" method="{1}">
+            <result name="list">/WEB-INF/pages/qupai/noticebill.jsp</result>
+        <result name="toSave">/WEB-INF/pages/qupai/noticebill_add.jsp</result>
     </action>
 </package>
 

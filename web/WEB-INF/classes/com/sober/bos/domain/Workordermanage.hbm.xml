@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.sober.bos.domain.Workordermanage" table="qp_workordermanage" schema="zjs_bos">
+        <id name="id" column="id">
+            <generator class="assigned" />
+        </id>
+        <property name="arrivecity" column="arrivecity"/>
+        <property name="product" column="product"/>
+        <property name="num" column="num"/>
+        <property name="weight" column="weight"/>
+        <property name="floadreqr" column="floadreqr"/>
+        <property name="prodtimelimit" column="prodtimelimit"/>
+        <property name="prodtype" column="prodtype"/>
+        <property name="sendername" column="sendername"/>
+        <property name="senderphone" column="senderphone"/>
+        <property name="senderaddr" column="senderaddr"/>
+        <property name="receivername" column="receivername"/>
+        <property name="receiverphone" column="receiverphone"/>
+        <property name="receiveraddr" column="receiveraddr"/>
+        <property name="feeitemnum" column="feeitemnum"/>
+        <property name="actlweit" column="actlweit"/>
+        <property name="vol" column="vol"/>
+        <property name="managerCheck" column="managerCheck"/>
+        <property name="updatetime" column="updatetime"/>
+    </class>
+</hibernate-mapping>

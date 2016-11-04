@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.sober.bos.domain.Noticebill" table="qp_noticebill" schema="zjs_bos">
+        <id name="id" column="id">
+            <generator class="uuid" />
+        </id>
+        <property name="customerId" column="customer_id"/>
+        <property name="customerName" column="customer_name"/>
+        <property name="delegater" column="delegater"/>
+        <property name="telephone" column="telephone"/>
+        <property name="pickaddress" column="pickaddress"/>
+        <property name="arrivecity" column="arrivecity"/>
+        <property name="product" column="product"/>
+        <property name="pickdate" column="pickdate"/>
+        <property name="num" column="num"/>
+        <property name="weight" column="weight"/>
+        <property name="volume" column="volume"/>
+        <property name="remark" column="remark"/>
+        <property name="ordertype" column="ordertype"/>
+        <set name="workbills" inverse="true">
+            <key>
+                <column name="noticebill_id" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.sober.bos.domain.Workbill"/>
+        </set>
+
+        <many-to-one name="user" class="com.sober.bos.domain.User" fetch="select">
+            <column name="user_id" length="32" />
+        </many-to-one>
+        <many-to-one name="staff" class="com.sober.bos.domain.Staff" fetch="select">
+        <column name="staff_id" length="32" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
