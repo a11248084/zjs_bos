@@ -1,0 +1,129 @@
+package com.sober.bos.dao.base;
+
+import com.sober.bos.utils.PageBean;
+import org.hibernate.Hibernate;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.criterion.CriteriaSpecification;
+import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.criterion.Projections;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import javax.annotation.Resource;
+import java.io.Serializable;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
+
+/**
+ * Created by Renhai on 2016/10/30.
+ */
+public class BaseDaoImpl<T> extends HibernateDaoSupport implements IBaseDao<T> {
+    //注入sessionFactory
+    @Resource
+    public void setSF(SessionFactory sessionFactory){
+        super.setSessionFactory(sessionFactory);
+    }
+
+
+    //声明class类型
+    private Class className;
+    //在构造方法中获取泛型中的参数的类型
+
+    public BaseDaoImpl() {
+        //获取当前运行的类的父类的参数化类型
+        ParameterizedType genericSuperclass = (ParameterizedType) this.getClass().getGenericSuperclass();
+        //获取实际类型参数
+        Type[] typeArguments = genericSuperclass.getActualTypeArguments();
+        Class typeArgument = (Class) typeArguments[0];
+        className = typeArgument;
+    }
+
+    @Override
+    public void save(T entity) {
+        this.getHibernateTemplate().save(entity);
+    }
+
+    @Override
+    public void saveOrUpdate(T entity){
+        this.getHibernateTemplate().saveOrUpdate(entity);
+    }
+    @Override
+    public void delete(T t) {
+        this.getHibernateTemplate().delete(t);
+    }
+
+    @Override
+    public List findAll() {
+        String hql = "FROM " + className.getSimpleName();
+        return this.getHibernateTemplate().find(hql);
+    }
+
+    @Override
+    public T findById(Serializable serializable) {
+        return (T) this.getHibernateTemplate().get(className, serializable);
+    }
+
+    @Override
+    public void update(T t) {
+        this.getHibernateTemplate().update(t);
+    }
+
+    @Override
+    public List findByCriteria(DetachedCriteria detachedCriteria) {
+
+        return this.getHibernateTemplate().findByCriteria(detachedCriteria);
+    }
+
+    @Override
+    public List findByNamedQuery(String queryName, Object... args) {
+
+        List byNamedQuery = this.getHibernateTemplate().findByNamedQuery(queryName, args);
+        return  byNamedQuery;
+    }
+
+
+
+    @Override
+    public void executeNamedQuery(String queryName, Object... args) {
+        Session session = this.getSession();
+        Query namedQuery = session.getNamedQuery(queryName);
+        //设置参数 判断可变参数的长度
+        if (args != null && args.length > 0) {
+            int flag = 0;
+            for (Object obj : args) {
+                namedQuery.setParameter(flag++, obj);
+            }
+        }
+        namedQuery.executeUpdate();
+    }
+
+
+    //分页查寻
+
+    @Override
+    public void  pageQuery(PageBean pageBean) {
+        int currentPage = pageBean.getCurrentPage();//当前页码
+        int pageSize = pageBean.getPageSize();//每页显示记录数
+       //分页查询
+        //先查询总记录数
+        DetachedCriteria detachedCriteria = pageBean.getDetachedCriteria();
+        detachedCriteria.setProjection(Projections.rowCount());
+        List<Long> byCriteria = this.getHibernateTemplate().findByCriteria(detachedCriteria);
+        Long value=byCriteria.get(0);
+        //设置总记录数
+        pageBean.setTotal(value.intValue());
+        //查询要展示的数据的集合  先清空李先查询的条件
+        detachedCriteria.setProjection(null);
+        detachedCriteria.setResultTransformer(CriteriaSpecification.ROOT_ENTITY);
+        int maxResults =pageSize;
+        int firstResult=(currentPage-1)*pageSize;
+        List list = this.getHibernateTemplate().findByCriteria(detachedCriteria, firstResult, maxResults);
+        //设置查询出的数据集合
+        pageBean.setRows(list);
+    }
+
+
+
+}

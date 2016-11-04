@@ -15,7 +15,7 @@
 
     <!--配置拦截器-->
     <interceptors>
-        <interceptor name="loginInterceptor" class="com.itheima.bos.web.interceptor.loginInterceptor">
+        <interceptor name="loginInterceptor" class="com.sober.bos.web.interceptor.loginInterceptor">
             <param name="excludeMethods">login</param>
         </interceptor>
         <interceptor-stack name="bos">

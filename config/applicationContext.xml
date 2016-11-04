@@ -47,12 +47,12 @@
 
         <property name="mappingDirectoryLocations">
             <list>
-                <value>classpath:com/itheima/bos/domain</value>
+                <value>classpath:com/sober/bos/domain</value>
             </list>
         </property>
     </bean>
     <!--组件扫描-->
-    <context:component-scan base-package="com.itheima.bos"/>
+    <context:component-scan base-package="com.sober.bos"/>
     <!-- 支持spring注解(引入spring提供的注解解析器) -->
     <context:annotation-config/>
     <!--支持事务注解-->
@@ -62,7 +62,7 @@
     <!--配置远程服务的代理对象-->
     <bean id="customerService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
         <!--注入接口类型-->
-        <property name="serviceInterface" value="com.itheima.bos.service.base.CustomerService"/>
+        <property name="serviceInterface" value="com.sober.bos.service.base.CustomerService"/>
         <!--注入服务的url地址-->
         <property name="serviceUrl" value="http://localhost:8080/crm/remoting/customer"/>
     </bean>
