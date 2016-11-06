@@ -8,6 +8,11 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="poi-3.9-20121203" />
+          <element id="library" level="project" name="pinyin4j-2.5.0" />
+          <element id="library" level="module" name="JUnit4" module-name="zjs_bos_day04" />
+          <element id="library" level="project" name="hessian-4.0.33" />
+          <element id="library" level="project" name="shiro-all-1.2.2" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="zjs_bos_day04/web/Web" />

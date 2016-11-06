@@ -44,7 +44,40 @@
 	}
 	
 	function doAssociations(){
-		$('#customerWindow').window('open');
+		var rows=$("#grid").datagrid("getSelections");//获得数据表格选中的所有行，返回数据
+		if(rows.length!=1){
+			$.messager.alert("提示信息","亲您选择一行定区在进行操作!","warning");
+		}else{
+
+
+			//为未关联客户的下拉框取数据   使用ajax
+			var url="${pageContext.request.contextPath}/decidedzoneAction_findCustomersNoAssociation.action";
+			$.post(url,{},function(data){
+				//清空下拉框的数据
+				$("#noassociationSelect").empty();
+				for(var i=0;i<data.length;i++){
+					var id=data[i].id;
+					var name=data[i].name;
+					$("#noassociationSelect").append("<option value="+id+">"+name+"</option>");
+				}
+			});
+
+			//为关联客户的下拉框取数据   使用ajax
+			var did=rows[0].id;
+			var url2="${pageContext.request.contextPath}/decidedzoneAction_findCustomersAssociation.action";
+			$.post(url2,{"id":did},function(data){
+				//清空下拉框的数据
+				$("#associationSelect").empty();
+				for(var i=0;i<data.length;i++){
+					var id=data[i].id;
+					var name=data[i].name;
+					$("#associationSelect").append("<option value="+id+">"+name+"</option>");
+				}
+			});
+
+			$('#customerWindow').window('open');
+
+	}
 	}
 	
 	//工具栏
@@ -130,7 +163,7 @@
 			columns : columns,
 			onDblClickRow : doDblClickRow
 		});
-		
+
 		// 添加、修改定区
 		$('#addDecidedzoneWindow').window({
 	        title: '添加修改定区',
@@ -141,7 +174,7 @@
 	        height: 400,
 	        resizable:false
 	    });
-		
+
 		// 查询定区
 		$('#searchWindow').window({
 	        title: '查询定区',
@@ -155,9 +188,9 @@
 		$("#btn").click(function(){
 			alert("执行查询...");
 		});
-		
-		
-		
+
+
+
 		//给添加按钮绑定事件
 		$("#save").click(function () {
 			var v=$("#saveForm").form("validate");
@@ -165,7 +198,8 @@
 				$("#saveForm").submit();
 			}
 		});
-		
+
+
 	});
 
 	function doDblClickRow(){
@@ -347,10 +381,10 @@
 		</div>
 	</div>
 	
-	<!-- 关联客户窗口 -->
-	<div class="easyui-window" title="关联客户窗口" id="customerWindow" collapsible="false" closed="true" minimizable="false" maximizable="false" style="top:20px;left:200px;width: 400px;height: 300px;">
+	<!-- 关联客户窗口  modal 可以实现遮罩效果-->
+	<div class="easyui-window" title="关联客户窗口" id="customerWindow" modal="true" collapsible="false" closed="true" minimizable="false" maximizable="false" style="top:20px;left:200px;width: 400px;height: 300px;">
 		<div style="overflow:auto;padding:5px;" border="false">
-			<form id="customerForm" action="${pageContext.request.contextPath }/decidedzone_assigncustomerstodecidedzone.action" method="post">
+			<form id="customerForm" action="${pageContext.request.contextPath }/decidedzoneAction_assigncustomerstodecidedzone.action" method="post">
 				<table class="table-edit" width="80%" align="center">
 					<tr class="title">
 						<td colspan="3">关联客户</td>
@@ -363,6 +397,28 @@
 						<td>
 							<input type="button" value="》》" id="toRight"><br/>
 							<input type="button" value="《《" id="toLeft">
+
+							<script type="text/javascript">
+								$(function(){
+									$("#toRight").click(function(){
+										$("#associationSelect").append($("#noassociationSelect option:selected"));
+									});
+
+									$("#toLeft").click(function(){
+										$("#noassociationSelect").append($("#associationSelect option:selected"));
+									});
+
+									//为客户关联的按钮添加事件
+									$("#associationBtn").click(function () {
+										//在提交之前选中右侧下拉框的所有数据 选中右侧下拉框中所有的option
+										$("#associationSelect option").attr("selected","selected");
+										//在提交表单之前，动态设置隐藏域id的值为当前选中的定区id
+										var rows=$("#grid").datagrid("getSelections");
+										$("#customerDecidedZoneId").val(rows[0].id);
+										$("#customerForm").submit();
+									});
+								});
+							</script>
 						</td>
 						<td>
 							<select id="associationSelect" name="customerIds" multiple="multiple" size="10"></select>

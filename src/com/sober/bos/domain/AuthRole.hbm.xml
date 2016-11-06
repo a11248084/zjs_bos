@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.sober.bos.domain.AuthRole" table="auth_role" schema="zjs_bos">
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+        <property name="code" column="code"/>
+        <property name="description" column="description"/>
+        <set name="users" inverse="true">
+            <key>
+                <column name="role_id"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.sober.bos.domain.User"/>
+        </set>
+
+        <set name="functions" inverse="true">
+            <key>
+                <column name="role_id"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.sober.bos.domain.AuthFunction"/>
+        </set>
+    </class>
+</hibernate-mapping>

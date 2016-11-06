@@ -26,6 +26,24 @@ public class Workordermanage {
     private String managerCheck;
     private Date updatetime;
 
+    public Workordermanage(String id, String product, String prodtimelimit, String prodtype, String sendername, String senderphone, String senderaddr, String receivername, String receiverphone, String receiveraddr, Double actlweit) {
+        this.id=id;
+        this.product=product;
+        this.prodtimelimit=prodtimelimit;
+        this.prodtype=prodtype;
+        this.sendername=sendername;
+        this.senderphone=senderphone;
+        this.senderaddr=senderaddr;
+        this.receivername=receivername;
+        this.receiverphone=receiverphone;
+        this.receiveraddr=receiveraddr;
+        this.actlweit=actlweit;
+
+    }
+
+    public Workordermanage() {
+    }
+
     public String getId() {
         return id;
     }

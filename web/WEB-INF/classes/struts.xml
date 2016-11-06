@@ -13,7 +13,7 @@
 
 <package name="zjs_bos" extends="struts-default">
 
-    <!--配置拦截器-->
+    <!--&lt;!&ndash;配置拦截器&ndash;&gt;
     <interceptors>
         <interceptor name="loginInterceptor" class="com.sober.bos.web.interceptor.loginInterceptor">
             <param name="excludeMethods">login</param>
@@ -25,7 +25,7 @@
     </interceptors>
 
     <default-interceptor-ref name="bos"/>
-
+-->
     <global-results>
         <result name="login">/login.jsp</result>
     </global-results>
@@ -70,6 +70,12 @@
             <result name="list">/WEB-INF/pages/qupai/noticebill.jsp</result>
         <result name="toSave">/WEB-INF/pages/qupai/noticebill_add.jsp</result>
     </action>
+
+    <!--Workordermanage的action模块-->
+    <action name="workordermanageAction_*" class="workordermanageAction" method="{1}">
+
+    </action>
+
 </package>
 
 

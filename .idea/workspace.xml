@@ -6,57 +6,116 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6da0b951-3730-459e-9eb2-ce39c604bb6d" name="Default" comment="git zjs_bos version1.0 by Sober">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/DecidedzoneDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/DecidedzoneDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/IDecidedzoneDao.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/IDecidedzoneDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/IRegionDao.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/IRegionDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/IStaffDao.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/IStaffDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/ISubareaDao.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/ISubareaDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/IUserDao.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/IUserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/RegionDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/RegionDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/StaffDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/StaffDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/SubareaDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/SubareaDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/UserDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/base/BaseDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/base/BaseDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/dao/base/IBaseDao.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/base/IBaseDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Customer.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Customer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Decidedzone.hbm.xml" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Decidedzone.hbm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Decidedzone.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Decidedzone.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Region.hbm.xml" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Region.hbm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Region.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Region.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Staff.hbm.xml" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Staff.hbm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Staff.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Staff.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Subarea.hbm.xml" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Subarea.hbm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/Subarea.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Subarea.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/User.hbm.xml" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/User.hbm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/domain/User.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/DecidedzoneServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/DecidedzoneServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/ISubareaServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/ISubareaServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/RegionServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/RegionServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/StaffServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/StaffServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/UserServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/base/CustomerService.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/base/CustomerService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/base/IDecidedzoneService.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/base/IDecidedzoneService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/base/IRegionService.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/base/IRegionService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/base/IStaffService.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/base/IStaffService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/base/ISubareaService.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/base/ISubareaService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/service/base/IUserService.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/base/IUserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/utils/FileUtils.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/utils/FileUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/utils/MD5Utils.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/utils/MD5Utils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/utils/PageBean.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/utils/PageBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/utils/PinYin4jUtils.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/utils/PinYin4jUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/utils/loginUser.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/utils/loginUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/action/DecidedzoneAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/DecidedzoneAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/action/RegionAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/RegionAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/action/StaffAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/StaffAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/action/SubareaAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/SubareaAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/action/TestAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/TestAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/action/UserAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/UserAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/action/base/BaseAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/base/BaseAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/itheima/bos/web/interceptor/loginInterceptor.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/interceptor/loginInterceptor.java" />
+    <list default="true" id="6da0b951-3730-459e-9eb2-ce39c604bb6d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/dao/IWorkordermanageDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/dao/WorkordermanageDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/AuthFunction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/AuthRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/service/WorkordermanageServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/service/base/IWorkordermanageService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/action/WorkordermanageAction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/realm/BosRealm.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/shiro_all_1_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/IWorkordermanageDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/WorkordermanageDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/AuthFunction.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/AuthFunction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/AuthRole.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/AuthRole.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/WorkordermanageServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/service/base/IWorkordermanageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/WorkordermanageAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/realm/BosRealm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/AuthFunction.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/AuthRole.hbm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/unauthorized.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/DecidedzoneDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/IDecidedzoneDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/IRegionDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/IStaffDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/ISubareaDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/IUserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/RegionDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/StaffDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/SubareaDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/UserDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/base/BaseDaoImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/dao/base/IBaseDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Customer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Decidedzone.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Decidedzone.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Region.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Region.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Staff.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Staff.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Subarea.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/Subarea.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/domain/User.hbm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/DecidedzoneServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/ISubareaServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/RegionServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/StaffServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/base/CustomerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/base/IDecidedzoneService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/base/IRegionService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/base/IStaffService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/base/ISubareaService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/service/base/IUserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/utils/FileUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/utils/MD5Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/utils/PageBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/utils/PinYin4jUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/utils/loginUser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/action/DecidedzoneAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/action/RegionAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/action/StaffAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/action/SubareaAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/action/TestAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/action/UserAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/action/base/BaseAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/com/itheima/bos/web/interceptor/loginInterceptor.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/dao/IUserDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/dao/IUserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/dao/UserDaoImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/dao/UserDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/User.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/Workordermanage.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/Workordermanage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/action/SubareaAction.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/action/SubareaAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/action/UserAction.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/action/UserAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/action/base/BaseAction.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/web/action/base/BaseAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/zjs_bos_day04_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/zjs_bos_day04_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/applicationContext.xml" afterPath="$PROJECT_DIR$/config/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/struts.xml" afterPath="$PROJECT_DIR$/config/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/classes/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/base/decidedzone.jsp" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/base/decidedzone.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/noticebill.jsp" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/noticebill.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/noticebill_add.jsp" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/noticebill_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/quickworkorder.jsp" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/quickworkorder.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/workorderimport.jsp" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/pages/qupai/workorderimport.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/zjs_bos_day04_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/dao/IUserDao.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/IUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/dao/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/domain/User.hbm.xml" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/User.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/domain/User.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.hbm.xml" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/utils/FileUtils.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/utils/FileUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/web/action/SubareaAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/SubareaAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/web/action/UserAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/UserAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sober/bos/web/action/base/BaseAction.java" afterPath="$PROJECT_DIR$/src/com/sober/bos/web/action/base/BaseAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/User.hbm.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/User.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/Workordermanage.hbm.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/sober/bos/domain/Workordermanage.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/struts.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pages/qupai/quickworkorder.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/qupai/quickworkorder.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pages/qupai/workorderimport.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/qupai/workorderimport.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zjs_bos_day04.iml" afterPath="$PROJECT_DIR$/zjs_bos_day04.iml" />
     </list>
     <ignored path="zjs_bos_day04.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,61 +159,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/message.properties">
+      <file leaf-file-name="WorkordermanageAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/WorkordermanageAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+              <folding>
+                <element signature="e#1468#1469#0" expanded="true" />
+                <element signature="e#1504#1505#0" expanded="true" />
+                <element signature="e#1669#1686#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quickworkorder.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/qupai/quickworkorder.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="49" column="5" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/struts.xml">
+      <file leaf-file-name="DefaultActionInvocation.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.3.15.3.jar!/com/opensymphony/xwork2/DefaultActionInvocation.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+            <state relative-caret-position="2295">
+              <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/TestAction.java">
+      <file leaf-file-name="DefaultWorkflowInterceptor.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.3.15.3.jar!/com/opensymphony/xwork2/interceptor/DefaultWorkflowInterceptor.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="510">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DebuggingInterceptor.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2445">
+              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IWorkordermanageService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/base/IWorkordermanageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -162,72 +225,132 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="Workordermanage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#1391#1392#0" expanded="false" />
+                <element signature="e#1416#1417#0" expanded="false" />
+                <element signature="e#1452#1453#0" expanded="false" />
+                <element signature="e#1480#1481#0" expanded="false" />
+                <element signature="e#1517#1518#0" expanded="false" />
+                <element signature="e#1550#1551#0" expanded="false" />
+                <element signature="e#1602#1603#0" expanded="false" />
+                <element signature="e#1646#1647#0" expanded="false" />
+                <element signature="e#1680#1681#0" expanded="false" />
+                <element signature="e#1710#1711#0" expanded="false" />
+                <element signature="e#1756#1757#0" expanded="false" />
+                <element signature="e#1794#1795#0" expanded="false" />
+                <element signature="e#1825#1826#0" expanded="false" />
+                <element signature="e#1851#1852#0" expanded="false" />
+                <element signature="e#1890#1891#0" expanded="false" />
+                <element signature="e#1920#1921#0" expanded="false" />
+                <element signature="e#1953#1954#0" expanded="false" />
+                <element signature="e#1982#1983#0" expanded="false" />
+                <element signature="e#2026#2027#0" expanded="false" />
+                <element signature="e#2062#2063#0" expanded="false" />
+                <element signature="e#2098#2099#0" expanded="false" />
+                <element signature="e#2130#2131#0" expanded="false" />
+                <element signature="e#2180#2181#0" expanded="false" />
+                <element signature="e#2222#2223#0" expanded="false" />
+                <element signature="e#2262#2263#0" expanded="false" />
+                <element signature="e#2298#2299#0" expanded="false" />
+                <element signature="e#2356#2357#0" expanded="false" />
+                <element signature="e#2406#2407#0" expanded="false" />
+                <element signature="e#2441#2442#0" expanded="false" />
+                <element signature="e#2472#2473#0" expanded="false" />
+                <element signature="e#2520#2521#0" expanded="false" />
+                <element signature="e#2560#2561#0" expanded="false" />
+                <element signature="e#2597#2598#0" expanded="false" />
+                <element signature="e#2630#2631#0" expanded="false" />
+                <element signature="e#2682#2683#0" expanded="false" />
+                <element signature="e#2726#2727#0" expanded="false" />
+                <element signature="e#2764#2765#0" expanded="false" />
+                <element signature="e#2798#2799#0" expanded="false" />
+                <element signature="e#2852#2853#0" expanded="false" />
+                <element signature="e#2898#2899#0" expanded="false" />
+                <element signature="e#2935#2936#0" expanded="false" />
+                <element signature="e#2968#2969#0" expanded="false" />
+                <element signature="e#3020#3021#0" expanded="false" />
+                <element signature="e#3064#3065#0" expanded="false" />
+                <element signature="e#3103#3104#0" expanded="false" />
+                <element signature="e#3138#3139#0" expanded="false" />
+                <element signature="e#3194#3195#0" expanded="false" />
+                <element signature="e#3242#3243#0" expanded="false" />
+                <element signature="e#3282#3283#0" expanded="false" />
+                <element signature="e#3318#3319#0" expanded="false" />
+                <element signature="e#3376#3377#0" expanded="false" />
+                <element signature="e#3426#3427#0" expanded="false" />
+                <element signature="e#3465#3466#0" expanded="false" />
+                <element signature="e#3500#3501#0" expanded="false" />
+                <element signature="e#3556#3557#0" expanded="false" />
+                <element signature="e#3604#3605#0" expanded="false" />
+                <element signature="e#3642#3643#0" expanded="false" />
+                <element signature="e#3675#3676#0" expanded="false" />
+                <element signature="e#3728#3729#0" expanded="false" />
+                <element signature="e#3772#3773#0" expanded="false" />
+                <element signature="e#3807#3808#0" expanded="false" />
+                <element signature="e#3838#3839#0" expanded="false" />
+                <element signature="e#3886#3887#0" expanded="false" />
+                <element signature="e#3926#3927#0" expanded="false" />
+                <element signature="e#3956#3957#0" expanded="false" />
+                <element signature="e#3982#3983#0" expanded="false" />
+                <element signature="e#4020#4021#0" expanded="false" />
+                <element signature="e#4050#4051#0" expanded="false" />
+                <element signature="e#4089#4090#0" expanded="false" />
+                <element signature="e#4124#4125#0" expanded="false" />
+                <element signature="e#4180#4181#0" expanded="false" />
+                <element signature="e#4228#4229#0" expanded="false" />
+                <element signature="e#4263#4264#0" expanded="false" />
+                <element signature="e#4296#4297#0" expanded="false" />
+                <element signature="e#4346#4347#0" expanded="false" />
+                <element signature="e#4390#4391#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Workordermanage.hbm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/base/CustomerService.java">
+      <file leaf-file-name="BaseAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/base/BaseAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1685#1686#0" expanded="false" />
+                <element signature="e#1737#1738#0" expanded="false" />
+                <element signature="e#1774#1775#0" expanded="false" />
+                <element signature="e#1826#1827#0" expanded="false" />
+                <element signature="e#2632#2633#0" expanded="false" />
+                <element signature="e#2660#2661#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkordermanageServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/WorkordermanageServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#287#288#0" expanded="false" />
-                <element signature="e#303#304#0" expanded="false" />
-                <element signature="e#337#338#0" expanded="false" />
-                <element signature="e#356#357#0" expanded="false" />
-                <element signature="e#384#385#0" expanded="false" />
-                <element signature="e#402#403#0" expanded="false" />
-                <element signature="e#439#440#0" expanded="false" />
-                <element signature="e#462#463#0" expanded="false" />
-                <element signature="e#493#494#0" expanded="false" />
-                <element signature="e#514#515#0" expanded="false" />
-                <element signature="e#557#558#0" expanded="false" />
-                <element signature="e#586#587#0" expanded="false" />
-                <element signature="e#619#620#0" expanded="false" />
-                <element signature="e#642#643#0" expanded="false" />
-                <element signature="e#689#690#0" expanded="false" />
-                <element signature="e#722#723#0" expanded="false" />
-                <element signature="e#753#754#0" expanded="false" />
-                <element signature="e#774#775#0" expanded="false" />
-                <element signature="e#817#818#0" expanded="false" />
-                <element signature="e#846#847#0" expanded="false" />
-                <element signature="e#884#885#0" expanded="false" />
-                <element signature="e#912#913#0" expanded="false" />
-                <element signature="e#969#970#0" expanded="false" />
-                <element signature="e#1012#1013#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DecidedzoneServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/DecidedzoneServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#865#866#0" expanded="false" />
-                <element signature="e#915#916#0" expanded="false" />
+                <element signature="e#623#624#0" expanded="false" />
+                <element signature="e#669#670#0" expanded="false" />
+                <element signature="e#729#730#0" expanded="false" />
+                <element signature="e#780#781#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -239,6 +362,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -254,49 +378,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/dao/IRegionDao.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/dao/RegionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/utils/PinYin4jUtils.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec/console.sql" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/staffAction.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/base/IRegionService.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/domain/Region.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/regionAction.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/base/IUserService.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/dao/ISubareaDao.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/dao/SubareaDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/subareaAction.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/base/region.jsp" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/domain/Subarea.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/domain/Region.hbm.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/base/staff.jsp" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/dao/base/BaseDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/RegionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/base/SubareaService.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/SubareaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/utils/FileUtils.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/base/subarea.jsp" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/dao/IDecidedzoneDao.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/dao/DecidedzoneDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/base/IStaffService.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/StaffServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/base/BaseAction.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/domain/Staff.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/StaffAction.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/domain/Decidedzone.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/base/ISubareaService.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/ISubareaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/SubareaAction.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/base/decidedzone.jsp" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/domain/Subarea.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/base/IDecidedzoneService.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/DecidedzoneAction.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/DecidedzoneServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/domain/Customer.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/service/base/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/com/itheima/bos/web/action/TestAction.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/IWorkbillDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/action/WorkbillAction.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/service/base/NoticebillService.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/service/WorkbillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/WorkbillDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/INoticebillDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/NoticebillDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/qupai/noticebill.jsp" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/service/base/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/service/base/INoticebillService.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/Noticebill.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/action/NoticebillAction.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/qupai/noticebill_add.jsp" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/Workbill.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/Workbill.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/service/NoticebillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/action/WorkordermanagerAction.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/action/base/BaseAction.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/IWorkordermanageDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/WorkordermanageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/qupai/quickworkorder.jsp" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/service/base/IWorkordermanageService.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/service/WorkordermanageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/RoleFunction.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/RoleFunction.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/User.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/AuthRole.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/AuthRole.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/AuthFunction.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/test/AuthFunction.hbm.xml" />
         <option value="$PROJECT_DIR$/config/struts.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/unauthorized.jsp" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/Noticebill.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/AuthFunction.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/AuthRole.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/domain/AuthRole.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/realm/BosRealm.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/action/UserAction.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/qupai/workorderimport.jsp" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/action/SubareaAction.java" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/config/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/com/sober/bos/web/action/WorkordermanageAction.java" />
       </list>
     </option>
   </component>
@@ -321,9 +453,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
+    <option name="x" value="49" />
     <option name="y" value="22" />
-    <option name="width" value="1389" />
+    <option name="width" value="1391" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -351,9 +483,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -382,39 +513,171 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bos" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qupai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zjs_bos_day04" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15205395" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sober.bos.web.action" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/sober/bos/domain" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sober.bos.service.base" />
+      <recent name="com.sober.bos.dao" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.sober.bos.test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src/com/sober/bos/domain" />
       <recent name="$PROJECT_DIR$/src/com/itheima/bos/domain" />
       <recent name="$PROJECT_DIR$/src/com/itheima/bos/service/base" />
       <recent name="$PROJECT_DIR$/src/com/itheima/bos/utils" />
-      <recent name="$PROJECT_DIR$/web/js" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
+    <configuration default="false" name="com.sober.bos.web.action.base in zjs_bos_day04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sober.bos.web.action.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="zjs_bos_day04" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sober.bos.web.action.base" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -842,7 +1105,7 @@
     </configuration>
     <configuration default="false" name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.69" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.7">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/zjs_bos/" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <deployment>
         <artifact name="zjs_bos_day04:war exploded">
           <settings>
@@ -852,8 +1115,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_zjs_bos_day04" />
-        <option name="HTTP_PORT" value="8081" />
-        <option name="JNDI_PORT" value="1100" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -915,9 +1176,15 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.com.sober.bos.web.action.base in zjs_bos_day04" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.com.sober.bos.web.action.base in zjs_bos_day04" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -944,7 +1211,19 @@
       <workItem from="1478172793216" duration="676000" />
       <workItem from="1478175637899" duration="2644000" />
       <workItem from="1478184750778" duration="494000" />
-      <workItem from="1478218150837" duration="878000" />
+      <workItem from="1478218150837" duration="1556000" />
+      <workItem from="1478221275557" duration="7120000" />
+      <workItem from="1478229862456" duration="10814000" />
+      <workItem from="1478262451304" duration="3515000" />
+      <workItem from="1478270331578" duration="498000" />
+      <workItem from="1478278532638" duration="1562000" />
+      <workItem from="1478307159896" duration="114000" />
+      <workItem from="1478307416651" duration="12727000" />
+      <workItem from="1478334366801" duration="8936000" />
+      <workItem from="1478399601143" duration="5824000" />
+      <workItem from="1478407486935" duration="105000" />
+      <workItem from="1478410565676" duration="364000" />
+      <workItem from="1478426787792" duration="18000" />
     </task>
     <task id="LOCAL-00001">
       <created>1478154961045</created>
@@ -981,7 +1260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1478169305037</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="git zjs_bos version1.0 by Sober">
+      <created>1478219113452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1478219113452</updated>
+    </task>
+    <task id="LOCAL-00007" summary="git zjs_bos version1.0 by Sober">
+      <created>1478278758996</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1478278758996</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1000,9 +1293,12 @@
     <history-entry file="TestAction_main - 2016.11.03 at 21h 25m 24s.xml">
       <configuration name="TestAction.main" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="com_sober_bos_web_action_base_in_zjs_bos_day04 - 2016.11.05 at 12h 07m 34s.xml">
+      <configuration name="com.sober.bos.web.action.base in zjs_bos_day04" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40186000" />
+    <option name="totallyTimeSpent" value="92461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1014,41 +1310,78 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="22" width="1389" height="878" extended-state="6" />
+    <frame x="49" y="22" width="1391" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.562341" sideWeight="0.46182358" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20356233" sideWeight="0.5381764" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5759822" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21232368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18800889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3956743" sideWeight="0.5381764" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5759822" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21535023" sideWeight="0.33767927" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23795404" sideWeight="0.66232073" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18800889" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5025445" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326972" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="144" y="122" width="1196" height="678" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36132315" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36132315" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.562341" sideWeight="0.46182358" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18800889" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24944486" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4173028" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326972" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="144" y="122" width="1196" height="678" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6005089" sideWeight="0.5381764" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5759822" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21535023" sideWeight="0.33767927" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36132315" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2120089" sideWeight="0.66232073" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1081,7 +1414,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git zjs_bos version1.0 by Sober" />
-    <option name="LAST_COMMIT_MESSAGE" value="git zjs_bos version1.0 by Sober" />
+    <MESSAGE value="git zjs_bos version1.1 by Sober" />
+    <option name="LAST_COMMIT_MESSAGE" value="git zjs_bos version1.1 by Sober" />
     <option name="CHANGE_BROWSER_SETTINGS">
       <map>
         <entry key="svn">
@@ -1094,10 +1428,24 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sober/bos/service/WorkordermanageServiceImpl.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/sober/bos/web/action/WorkordermanageAction.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="6" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1106,420 +1454,472 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/dao/DecidedzoneDaoImpl.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/mgt/RealmSecurityManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/base/subarea.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/dao/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="97" selection-start-line="46" selection-start-column="97" selection-end-line="46" selection-end-column="97" />
+        <state relative-caret-position="240">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/base/BaseAction.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/dao/IUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+        <state relative-caret-position="135">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/base/IStaffService.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="261">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/StaffServiceImpl.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar!/javax/management/remote/SubjectDelegationPermission.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+        <state relative-caret-position="135">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/dao/base/IBaseDao.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/com/sun/jmx/remote/security/SubjectDelegator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        <state relative-caret-position="-1227">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/javax/security/auth/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/concurrent/SubjectAwareExecutorService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1059">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/WorkbillAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/subject/support/SubjectCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/subject/SubjectContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/util/MapContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/authc/UsernamePasswordToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/subject/Subject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1104">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/realm/AuthorizingRealm.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/realm/BosRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/authc/AuthenticationToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/mgt/SecurityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/subject/PrincipalCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/subject/support/DefaultSubjectContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-907">
+          <caret line="90" column="19" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/util/ThreadContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/SecurityUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/UserAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="480">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Decidedzone.hbm.xml">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-3.2.0.RELEASE.jar!/org/springframework/web/filter/DelegatingFilterProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        <state relative-caret-position="165">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Staff.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/spring/web/ShiroFilterFactoryBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="1020">
+          <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/RegionAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/utils/PageBean.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/web/filter/mgt/FilterChainManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/ISubareaServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/config/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        <state relative-caret-position="480">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/base/ISubareaService.java">
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/shiro-all-1.2.2.jar!/org/apache/shiro/web/mgt/DefaultWebSecurityManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="390">
+          <caret line="60" column="42" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Staff.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/qupai/noticebill_add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/RegionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/json/decidedzone_subarea.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Subarea.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/base/region.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Subarea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Decidedzone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/base/IDecidedzoneService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-core-3.2.0.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-3.2.0.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-3.2.0.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="221" column="0" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.3.15.3.jar!/com/opensymphony/xwork2/interceptor/ExceptionMappingInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.3.15.3.jar!/com/opensymphony/xwork2/DefaultActionInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/impl/StrutsActionProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/dispatcher/Dispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="455" column="0" selection-start-line="455" selection-start-column="0" selection-end-line="455" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/dispatcher/ng/ExecuteOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/dispatcher/ng/filter/StrutsPrepareAndExecuteFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-orm-3.2.0.RELEASE.jar!/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="71" column="157" selection-start-line="71" selection-start-column="157" selection-end-line="71" selection-end-column="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-3.2.0.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/net/Proxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2070">
+        <state relative-caret-position="-1666">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/SubareaAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="113" column="75" selection-start-line="113" selection-start-column="75" selection-end-line="113" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#pageQuery#0;class#SubareaAction#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/DecidedzoneAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#597#598#0" expanded="false" />
-            <element signature="e#639#640#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/base/decidedzone.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4740">
-          <caret line="316" column="34" selection-start-line="316" selection-start-column="34" selection-end-line="316" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/StaffAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1847#1848#0" expanded="false" />
-            <element signature="e#1877#1878#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/TestAction.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/DecidedzoneAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="-331">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/NoticebillAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/qupai/workorderimport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/ServletActionContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/RegionAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/SubareaAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="96" column="49" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/base/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#287#288#0" expanded="false" />
-            <element signature="e#303#304#0" expanded="false" />
-            <element signature="e#337#338#0" expanded="false" />
-            <element signature="e#356#357#0" expanded="false" />
-            <element signature="e#384#385#0" expanded="false" />
-            <element signature="e#402#403#0" expanded="false" />
-            <element signature="e#439#440#0" expanded="false" />
-            <element signature="e#462#463#0" expanded="false" />
-            <element signature="e#493#494#0" expanded="false" />
-            <element signature="e#514#515#0" expanded="false" />
-            <element signature="e#557#558#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#642#643#0" expanded="false" />
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#722#723#0" expanded="false" />
-            <element signature="e#753#754#0" expanded="false" />
-            <element signature="e#774#775#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#846#847#0" expanded="false" />
-            <element signature="e#884#885#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#969#970#0" expanded="false" />
-            <element signature="e#1012#1013#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/DecidedzoneServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#915#916#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        <state relative-caret-position="891">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/base/BaseAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="495">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1685#1686#0" expanded="false" />
+            <element signature="e#1737#1738#0" expanded="false" />
+            <element signature="e#1774#1775#0" expanded="false" />
+            <element signature="e#1826#1827#0" expanded="false" />
+            <element signature="e#2632#2633#0" expanded="false" />
+            <element signature="e#2660#2661#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/message.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/base/IWorkordermanageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/service/WorkordermanageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#623#624#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#729#730#0" expanded="false" />
+            <element signature="e#780#781#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/domain/Workordermanage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#1391#1392#0" expanded="false" />
+            <element signature="e#1416#1417#0" expanded="false" />
+            <element signature="e#1452#1453#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1517#1518#0" expanded="false" />
+            <element signature="e#1550#1551#0" expanded="false" />
+            <element signature="e#1602#1603#0" expanded="false" />
+            <element signature="e#1646#1647#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1710#1711#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+            <element signature="e#1794#1795#0" expanded="false" />
+            <element signature="e#1825#1826#0" expanded="false" />
+            <element signature="e#1851#1852#0" expanded="false" />
+            <element signature="e#1890#1891#0" expanded="false" />
+            <element signature="e#1920#1921#0" expanded="false" />
+            <element signature="e#1953#1954#0" expanded="false" />
+            <element signature="e#1982#1983#0" expanded="false" />
+            <element signature="e#2026#2027#0" expanded="false" />
+            <element signature="e#2062#2063#0" expanded="false" />
+            <element signature="e#2098#2099#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+            <element signature="e#2180#2181#0" expanded="false" />
+            <element signature="e#2222#2223#0" expanded="false" />
+            <element signature="e#2262#2263#0" expanded="false" />
+            <element signature="e#2298#2299#0" expanded="false" />
+            <element signature="e#2356#2357#0" expanded="false" />
+            <element signature="e#2406#2407#0" expanded="false" />
+            <element signature="e#2441#2442#0" expanded="false" />
+            <element signature="e#2472#2473#0" expanded="false" />
+            <element signature="e#2520#2521#0" expanded="false" />
+            <element signature="e#2560#2561#0" expanded="false" />
+            <element signature="e#2597#2598#0" expanded="false" />
+            <element signature="e#2630#2631#0" expanded="false" />
+            <element signature="e#2682#2683#0" expanded="false" />
+            <element signature="e#2726#2727#0" expanded="false" />
+            <element signature="e#2764#2765#0" expanded="false" />
+            <element signature="e#2798#2799#0" expanded="false" />
+            <element signature="e#2852#2853#0" expanded="false" />
+            <element signature="e#2898#2899#0" expanded="false" />
+            <element signature="e#2935#2936#0" expanded="false" />
+            <element signature="e#2968#2969#0" expanded="false" />
+            <element signature="e#3020#3021#0" expanded="false" />
+            <element signature="e#3064#3065#0" expanded="false" />
+            <element signature="e#3103#3104#0" expanded="false" />
+            <element signature="e#3138#3139#0" expanded="false" />
+            <element signature="e#3194#3195#0" expanded="false" />
+            <element signature="e#3242#3243#0" expanded="false" />
+            <element signature="e#3282#3283#0" expanded="false" />
+            <element signature="e#3318#3319#0" expanded="false" />
+            <element signature="e#3376#3377#0" expanded="false" />
+            <element signature="e#3426#3427#0" expanded="false" />
+            <element signature="e#3465#3466#0" expanded="false" />
+            <element signature="e#3500#3501#0" expanded="false" />
+            <element signature="e#3556#3557#0" expanded="false" />
+            <element signature="e#3604#3605#0" expanded="false" />
+            <element signature="e#3642#3643#0" expanded="false" />
+            <element signature="e#3675#3676#0" expanded="false" />
+            <element signature="e#3728#3729#0" expanded="false" />
+            <element signature="e#3772#3773#0" expanded="false" />
+            <element signature="e#3807#3808#0" expanded="false" />
+            <element signature="e#3838#3839#0" expanded="false" />
+            <element signature="e#3886#3887#0" expanded="false" />
+            <element signature="e#3926#3927#0" expanded="false" />
+            <element signature="e#3956#3957#0" expanded="false" />
+            <element signature="e#3982#3983#0" expanded="false" />
+            <element signature="e#4020#4021#0" expanded="false" />
+            <element signature="e#4050#4051#0" expanded="false" />
+            <element signature="e#4089#4090#0" expanded="false" />
+            <element signature="e#4124#4125#0" expanded="false" />
+            <element signature="e#4180#4181#0" expanded="false" />
+            <element signature="e#4228#4229#0" expanded="false" />
+            <element signature="e#4263#4264#0" expanded="false" />
+            <element signature="e#4296#4297#0" expanded="false" />
+            <element signature="e#4346#4347#0" expanded="false" />
+            <element signature="e#4390#4391#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/struts2-core-2.3.15.3.jar!/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2445">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.3.15.3.jar!/com/opensymphony/xwork2/DefaultActionInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/xwork-core-2.3.15.3.jar!/com/opensymphony/xwork2/interceptor/DefaultWorkflowInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/qupai/quickworkorder.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sober/bos/web/action/WorkordermanageAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+          <folding>
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#1669#1686#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1613,7 +2013,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>hessian-4.0.33</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

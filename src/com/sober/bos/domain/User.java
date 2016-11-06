@@ -1,9 +1,11 @@
 package com.sober.bos.domain;
 
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * Created by Renhai on 2016/10/30.
+ * Created by Renhai on 2016/11/5.
  */
 public class User {
     private String id;
@@ -15,6 +17,9 @@ public class User {
     private String station;
     private String telephone;
     private String remark;
+    private Set<Noticebill> noticebills=new HashSet<>();
+    private Set<AuthRole> authRoles=new HashSet<>();
+
 
     public String getId() {
         return id;
@@ -120,5 +125,21 @@ public class User {
         result = 31 * result + (telephone != null ? telephone.hashCode() : 0);
         result = 31 * result + (remark != null ? remark.hashCode() : 0);
         return result;
+    }
+
+    public Set<Noticebill> getNoticebills() {
+        return noticebills;
+    }
+
+    public void setNoticebills(Set<Noticebill> noticebills) {
+        this.noticebills = noticebills;
+    }
+
+    public Set<AuthRole> getAuthRoles() {
+        return authRoles;
+    }
+
+    public void setAuthRoles(Set<AuthRole> authRoles) {
+        this.authRoles = authRoles;
     }
 }

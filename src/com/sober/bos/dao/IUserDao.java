@@ -8,4 +8,5 @@ import com.sober.bos.domain.User;
  */
 public interface IUserDao extends IBaseDao<User>{
 
+   public User findByUsername(String username);
 }

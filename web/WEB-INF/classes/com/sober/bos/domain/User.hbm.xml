@@ -14,12 +14,25 @@
         <property name="station" column="station"/>
         <property name="telephone" column="telephone"/>
         <property name="remark" column="remark"/>
-    </class>
+        <set name="noticebills" inverse="true">
+            <key>
+                <column name="user_id" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.sober.bos.domain.Noticebill"/>
+        </set>
 
-    <query name="loginQuery">
-        FROM User WHERE username =? AND password =?
-    </query>
-    <query name="editPassword">
-        UPDATE User set password =? WHERE id =?
-    </query>
+        <set name="authRoles" inverse="true">
+            <key>
+            <column name="user_id" />
+        </key>
+            <one-to-many class="com.sober.bos.domain.AuthRole"/>
+        </set>
+
+        <query name="loginQuery">
+            FROM User WHERE username =? AND password =?
+        </query>
+        <query name="editPassword">
+            UPDATE User set password =? WHERE id =?
+        </query>
+    </class>
 </hibernate-mapping>

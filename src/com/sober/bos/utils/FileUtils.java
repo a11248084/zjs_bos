@@ -12,7 +12,7 @@ public class FileUtils {
 		 * @param filename
 		 *            下载文件名
 		 * @param agent
-		 *            客户端浏览器
+		 *            客户端浏览器  user-agent 用户代理   可以识别客户的操作系统信息,浏览器版本之类的信息
 		 * @return 编码后的下载附件名
 		 * @throws IOException
 		 */

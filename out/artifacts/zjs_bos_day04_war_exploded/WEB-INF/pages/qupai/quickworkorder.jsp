@@ -46,6 +46,7 @@
 	
 	function doSave(){
 		$("#grid").datagrid('endEdit',editIndex );
+
 	}
 	
 	function doCancel(){
@@ -165,6 +166,17 @@
 			onAfterEdit : function(rowIndex, rowData, changes){
 				console.info(rowData);
 				editIndex = undefined;
+				//发送异步请求保存数据
+				var url="${pageContext.request.contextPath}/workordermanageAction_save.action";
+				$.post(url,rowData,function (data) {
+					if (data=="0"){
+						//成功
+						$.messager.alert("提示信息","保存成功!","info");
+					}else {
+						$.messager.alert("提示信息","保存失败!","warning");
+
+					}
+				});
 			}
 		});
 	});

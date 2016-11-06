@@ -46,7 +46,8 @@ public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
     @Resource
     protected IDecidedzoneService decidedzoneService;
 
-
+    @Resource
+    protected IWorkordermanageService workordermanageService;
     @Resource
     protected INoticebillService INoticebillService;
     //利用属性驱动获取分页工具条自动传递过来的page(当前页) 和rows(每页查询的条数)

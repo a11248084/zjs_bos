@@ -5,6 +5,19 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
            version="2.5">
 
+    <!--
+    配置spring提供的过滤器对象    shiro框架
+        -->
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <!--委托过滤器代理对象-->
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 
     <!--
 使session延迟关闭的过滤器   必须要配置在struts2过滤器的前面

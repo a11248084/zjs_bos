@@ -28,82 +28,64 @@
     <schema id="24" name="store_v1.0" />
     <schema id="25" name="studb" />
     <schema id="26" name="sys" />
-    <table id="27" parent="1" name="bc_decidedzone" />
-    <table id="28" parent="1" name="bc_region" />
-    <table id="29" parent="1" name="bc_staff" />
-    <table id="30" parent="1" name="bc_subarea" />
-    <table id="31" parent="1" name="t_user" />
-    <column id="32" parent="27" name="id">
+    <schema id="27" name="crm3" />
+    <table id="28" parent="1" name="bc_decidedzone" />
+    <table id="29" parent="1" name="bc_region" />
+    <table id="30" parent="1" name="bc_staff" />
+    <table id="31" parent="1" name="bc_subarea" />
+    <table id="32" parent="1" name="t_user" />
+    <table id="33" parent="1" name="qp_noticebill" />
+    <table id="34" parent="1" name="qp_workbill" />
+    <table id="35" parent="1" name="qp_workordermanage" />
+    <table id="36" parent="1" name="auth_function" />
+    <table id="37" parent="1" name="auth_role" />
+    <table id="38" parent="1" name="role_function" />
+    <table id="39" parent="1" name="user_role" />
+    <column id="40" parent="28" name="id">
       <mandatory>1</mandatory>
       <data-type>varchar(32)|0</data-type>
     </column>
-    <column id="33" parent="27" name="name">
+    <column id="41" parent="28" name="name">
       <data-type>varchar(30)|0</data-type>
     </column>
-    <column id="34" parent="27" name="staff_id">
+    <column id="42" parent="28" name="staff_id">
       <data-type>varchar(32)|0</data-type>
     </column>
-    <index id="35" parent="27" name="FK_decidedzone_staff">
+    <index id="43" parent="28" name="FK_decidedzone_staff">
       <columns>staff_id</columns>
       <desc-columns />
     </index>
-    <key id="36" parent="27" name="PRIMARY">
+    <key id="44" parent="28" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <foreign-key id="37" parent="27" name="FK_decidedzone_staff">
+    <foreign-key id="45" parent="28" name="FK_decidedzone_staff">
       <columns>staff_id</columns>
       <ref-key>~.bc_staff.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="38" parent="28" name="id">
-      <mandatory>1</mandatory>
-      <data-type>varchar(32)|0</data-type>
-    </column>
-    <column id="39" parent="28" name="province">
-      <data-type>varchar(50)|0</data-type>
-    </column>
-    <column id="40" parent="28" name="city">
-      <data-type>varchar(50)|0</data-type>
-    </column>
-    <column id="41" parent="28" name="district">
-      <data-type>varchar(50)|0</data-type>
-    </column>
-    <column id="42" parent="28" name="postcode">
-      <data-type>varchar(50)|0</data-type>
-    </column>
-    <column id="43" parent="28" name="shortcode">
-      <data-type>varchar(30)|0</data-type>
-    </column>
-    <column id="44" parent="28" name="citycode">
-      <data-type>varchar(30)|0</data-type>
-    </column>
-    <key id="45" parent="28" name="PRIMARY">
-      <columns>id</columns>
-      <primary>1</primary>
-    </key>
     <column id="46" parent="29" name="id">
       <mandatory>1</mandatory>
       <data-type>varchar(32)|0</data-type>
     </column>
-    <column id="47" parent="29" name="name">
-      <data-type>varchar(20)|0</data-type>
+    <column id="47" parent="29" name="province">
+      <data-type>varchar(50)|0</data-type>
     </column>
-    <column id="48" parent="29" name="telephone">
-      <data-type>varchar(20)|0</data-type>
+    <column id="48" parent="29" name="city">
+      <data-type>varchar(50)|0</data-type>
     </column>
-    <column id="49" parent="29" name="haspda">
-      <data-type>char(1)|0</data-type>
+    <column id="49" parent="29" name="district">
+      <data-type>varchar(50)|0</data-type>
     </column>
-    <column id="50" parent="29" name="deltag">
-      <data-type>char(1)|0</data-type>
+    <column id="50" parent="29" name="postcode">
+      <data-type>varchar(50)|0</data-type>
     </column>
-    <column id="51" parent="29" name="station">
-      <data-type>varchar(40)|0</data-type>
+    <column id="51" parent="29" name="shortcode">
+      <data-type>varchar(30)|0</data-type>
     </column>
-    <column id="52" parent="29" name="standard">
-      <data-type>varchar(100)|0</data-type>
+    <column id="52" parent="29" name="citycode">
+      <data-type>varchar(30)|0</data-type>
     </column>
     <key id="53" parent="29" name="PRIMARY">
       <columns>id</columns>
@@ -113,82 +95,394 @@
       <mandatory>1</mandatory>
       <data-type>varchar(32)|0</data-type>
     </column>
-    <column id="55" parent="30" name="decidedzone_id">
-      <data-type>varchar(32)|0</data-type>
+    <column id="55" parent="30" name="name">
+      <data-type>varchar(20)|0</data-type>
     </column>
-    <column id="56" parent="30" name="region_id">
-      <data-type>varchar(32)|0</data-type>
+    <column id="56" parent="30" name="telephone">
+      <data-type>varchar(20)|0</data-type>
     </column>
-    <column id="57" parent="30" name="addresskey">
-      <data-type>varchar(100)|0</data-type>
-    </column>
-    <column id="58" parent="30" name="startnum">
-      <data-type>varchar(30)|0</data-type>
-    </column>
-    <column id="59" parent="30" name="endnum">
-      <data-type>varchar(30)|0</data-type>
-    </column>
-    <column id="60" parent="30" name="single">
+    <column id="57" parent="30" name="haspda">
       <data-type>char(1)|0</data-type>
     </column>
-    <column id="61" parent="30" name="position">
-      <data-type>varchar(255)|0</data-type>
+    <column id="58" parent="30" name="deltag">
+      <data-type>char(1)|0</data-type>
     </column>
-    <index id="62" parent="30" name="FK_area_decidedzone">
-      <columns>decidedzone_id</columns>
-      <desc-columns />
-    </index>
-    <index id="63" parent="30" name="FK_area_region">
-      <columns>region_id</columns>
-      <desc-columns />
-    </index>
-    <key id="64" parent="30" name="PRIMARY">
+    <column id="59" parent="30" name="station">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="60" parent="30" name="standard">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="61" parent="30" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <foreign-key id="65" parent="30" name="FK_area_decidedzone">
+    <column id="62" parent="31" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="63" parent="31" name="decidedzone_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="64" parent="31" name="region_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="65" parent="31" name="addresskey">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="66" parent="31" name="startnum">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="67" parent="31" name="endnum">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="68" parent="31" name="single">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="69" parent="31" name="position">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="70" parent="31" name="FK_area_decidedzone">
+      <columns>decidedzone_id</columns>
+      <desc-columns />
+    </index>
+    <index id="71" parent="31" name="FK_area_region">
+      <columns>region_id</columns>
+      <desc-columns />
+    </index>
+    <key id="72" parent="31" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="73" parent="31" name="FK_area_decidedzone">
       <columns>decidedzone_id</columns>
       <ref-key>~.bc_decidedzone.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="66" parent="30" name="FK_area_region">
+    <foreign-key id="74" parent="31" name="FK_area_region">
       <columns>region_id</columns>
       <ref-key>~.bc_region.PRIMARY</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="67" parent="31" name="id">
+    <column id="75" parent="32" name="id">
       <mandatory>1</mandatory>
       <data-type>varchar(32)|0</data-type>
     </column>
-    <column id="68" parent="31" name="username">
+    <column id="76" parent="32" name="username">
       <data-type>varchar(20)|0</data-type>
     </column>
-    <column id="69" parent="31" name="password">
+    <column id="77" parent="32" name="password">
       <data-type>varchar(32)|0</data-type>
     </column>
-    <column id="70" parent="31" name="salary">
+    <column id="78" parent="32" name="salary">
       <data-type>double|0</data-type>
     </column>
-    <column id="71" parent="31" name="birthday">
+    <column id="79" parent="32" name="birthday">
       <data-type>date|0</data-type>
     </column>
-    <column id="72" parent="31" name="gender">
+    <column id="80" parent="32" name="gender">
       <data-type>varchar(10)|0</data-type>
     </column>
-    <column id="73" parent="31" name="station">
+    <column id="81" parent="32" name="station">
       <data-type>varchar(40)|0</data-type>
     </column>
-    <column id="74" parent="31" name="telephone">
+    <column id="82" parent="32" name="telephone">
       <data-type>varchar(11)|0</data-type>
     </column>
-    <column id="75" parent="31" name="remark">
+    <column id="83" parent="32" name="remark">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <key id="76" parent="31" name="PRIMARY">
+    <key id="84" parent="32" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
+    <column id="85" parent="33" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="86" parent="33" name="staff_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="87" parent="33" name="customer_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="88" parent="33" name="customer_name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="89" parent="33" name="delegater">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="90" parent="33" name="telephone">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="91" parent="33" name="pickaddress">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="92" parent="33" name="arrivecity">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="93" parent="33" name="product">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="94" parent="33" name="pickdate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="95" parent="33" name="num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="96" parent="33" name="weight">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="97" parent="33" name="volume">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="98" parent="33" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="99" parent="33" name="ordertype">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="100" parent="33" name="user_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <index id="101" parent="33" name="FK_Reference_20">
+      <columns>user_id</columns>
+      <desc-columns />
+    </index>
+    <index id="102" parent="33" name="FK_Reference_30">
+      <columns>staff_id</columns>
+      <desc-columns />
+    </index>
+    <key id="103" parent="33" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="104" parent="33" name="FK_Reference_30">
+      <columns>staff_id</columns>
+      <ref-key>~.bc_staff.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="105" parent="33" name="FK_Reference_20">
+      <columns>user_id</columns>
+      <ref-key>~.t_user.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="106" parent="34" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="107" parent="34" name="noticebill_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="108" parent="34" name="type">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="109" parent="34" name="pickstate">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="110" parent="34" name="buildtime">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="111" parent="34" name="attachbilltimes">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="112" parent="34" name="remark">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="113" parent="34" name="staff_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <index id="114" parent="34" name="FK_Reference_40">
+      <columns>staff_id</columns>
+      <desc-columns />
+    </index>
+    <index id="115" parent="34" name="FK_workbill_noticebill_fk_50">
+      <columns>noticebill_id</columns>
+      <desc-columns />
+    </index>
+    <key id="116" parent="34" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="117" parent="34" name="FK_workbill_noticebill_fk_50">
+      <columns>noticebill_id</columns>
+      <ref-key>~.qp_noticebill.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="118" parent="34" name="FK_Reference_40">
+      <columns>staff_id</columns>
+      <ref-key>~.bc_staff.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="119" parent="35" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="120" parent="35" name="arrivecity">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="121" parent="35" name="product">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="122" parent="35" name="num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="123" parent="35" name="weight">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="124" parent="35" name="floadreqr">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="125" parent="35" name="prodtimelimit">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="126" parent="35" name="prodtype">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="127" parent="35" name="sendername">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="128" parent="35" name="senderphone">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="129" parent="35" name="senderaddr">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="130" parent="35" name="receivername">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="131" parent="35" name="receiverphone">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="132" parent="35" name="receiveraddr">
+      <data-type>varchar(200)|0</data-type>
+    </column>
+    <column id="133" parent="35" name="feeitemnum">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="134" parent="35" name="actlweit">
+      <data-type>double|0</data-type>
+    </column>
+    <column id="135" parent="35" name="vol">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="136" parent="35" name="managerCheck">
+      <data-type>varchar(1)|0</data-type>
+    </column>
+    <column id="137" parent="35" name="updatetime">
+      <data-type>date|0</data-type>
+    </column>
+    <key id="138" parent="35" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="139" parent="36" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="140" parent="36" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="141" parent="36" name="code">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="142" parent="36" name="description">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="143" parent="36" name="page">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="144" parent="36" name="generatemenu">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="145" parent="36" name="zindex">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="146" parent="36" name="pid">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <index id="147" parent="36" name="AK_Key_2">
+      <columns>name</columns>
+      <desc-columns />
+    </index>
+    <index id="148" parent="36" name="FK_Reference_10">
+      <columns>pid</columns>
+      <desc-columns />
+    </index>
+    <key id="149" parent="36" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="150" parent="36" name="FK_Reference_10">
+      <columns>pid</columns>
+      <ref-key>PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="151" parent="37" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="152" parent="37" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="153" parent="37" name="code">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="154" parent="37" name="description">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="155" parent="37" name="AK_Key_2">
+      <columns>name</columns>
+      <desc-columns />
+    </index>
+    <key id="156" parent="37" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="157" parent="38" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="158" parent="38" name="function_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <key id="159" parent="38" name="PRIMARY">
+      <columns>role_id
+function_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="160" parent="39" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="161" parent="39" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <index id="162" parent="39" name="FK_Reference_50">
+      <columns>role_id</columns>
+      <desc-columns />
+    </index>
+    <key id="163" parent="39" name="PRIMARY">
+      <columns>user_id
+role_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="164" parent="39" name="FK_Reference_50">
+      <columns>role_id</columns>
+      <ref-key>~.auth_role.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
   </database-model>
 </dataSource>

@@ -27,18 +27,22 @@
 	src="${pageContext.request.contextPath }/js/easyui/locale/easyui-lang-zh_CN.js"
 	type="text/javascript"></script>
 <script type="text/javascript"
-	src="${pageContext.request.contextPath }/js/ocupload/jquery.ocupload-1.1.2.js"></script>	
+	src="${pageContext.request.contextPath }/js/jquery.ocupload-1.1.2.js"></script>
 <script type="text/javascript">
 	$(function(){
+
+
+
+
 		$("#grid").datagrid({
-			url : '',
+			url : '${pageContext.request.contextPath}/workordermanageAction_findAllByAjax.action',
 			toolbar : [
 				{
 					id : 'btn-download',
 					text : '模板下载',
 					iconCls : 'icon-save',
 					handler : function(){
-						location.href = "${pageContext.request.contextPath}/download.action?filename=工作单导入模板.xls";
+						location.href = "${pageContext.request.contextPath}/workordermanageAction_downloadModel.action";
 					}
 				},{
 					id : 'btn-upload',
@@ -119,22 +123,43 @@
 			fit : true // 占满容器
 		});
 		
+
+
+		$.fn.serializeJson=function(){
+			var serializeObj={};
+			var array=this.serializeArray();
+			$(array).each(function(){
+				if(serializeObj[this.name]){
+					if($.isArray(serializeObj[this.name])){
+						serializeObj[this.name].push(this.value);
+					}else{
+						serializeObj[this.name]=[serializeObj[this.name],this.value];
+					}
+				}else{
+					serializeObj[this.name]=this.value;
+				}
+			});
+			return serializeObj;
+		};
+
+
+
+
 		// 一键上传
 		$("#btn-upload").upload({
-			 name: 'upload',  // <input name="file" />
-		     action: '${pageContext.request.contextPath}/workOrderManage_batchImport.action',  // 提交请求action路径
-		     enctype: 'multipart/form-data', // 编码格式
-		     autoSubmit: true, // 选中文件提交表单
-		     onComplete: function(response) {
-		        	if(response=="success"){
-		        		$.messager.alert("提示信息","数据导入成功！","info");
-		        		$("#grid").datagrid("reload");
-		        	}else{
-		        		$.messager.alert("错误提示",response,"error");
-		        	}
-		     }// 请求完成时 调用函数
+			name: 'myFile',  // <input name="myFile" />
+			action: '${pageContext.request.contextPath}/workordermanageAction_importXls.action',  // 提交请求action路径
+			onComplete: function(data,self,element) {
+				if(data=="1"){//1代表成功
+					$.messager.alert("提示信息","数据导入成功！","info");
+					$("#grid").datagrid("reload");
+				}else{
+					$.messager.alert("错误提示","数据导入失败","error");
+				}
+			}// 请求完成时 调用函数
 		});
 	});
+
 </script>	
 </head>
 <body class="easyui-layout" >

@@ -92,6 +92,7 @@ public class SubareaAction extends BaseAction<Subarea> {
         //文件下载 一个流  两个头
         ServletOutputStream out = response.getOutputStream();
         String fileName="subarea.xls";
+        //防止中文乱码
         FileUtils.encodeDownloadFilename(fileName,"user-agent");
         response.setContentType(ServletActionContext.getServletContext().getMimeType(fileName));
         //设置下载文件名 以附件得形式下载

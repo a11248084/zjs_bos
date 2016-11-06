@@ -64,7 +64,42 @@
         <!--注入接口类型-->
         <property name="serviceInterface" value="com.sober.bos.service.base.CustomerService"/>
         <!--注入服务的url地址-->
-        <property name="serviceUrl" value="http://localhost:8080/crm/remoting/customer"/>
+        <property name="serviceUrl" value="http://localhost:8081/crm/remoting/customer"/>
     </bean>
 
+
+
+    <!--配置shiro的bean,使用当前工厂bean对象创建过滤器用于进行权限控制  name必须要和web.xml中配置的一致-->
+    <bean name="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!--注入安全管理器对象-->
+        <property name="securityManager" ref="securityManager"/>
+        <!--登陆的url地址-->
+        <property name="loginUrl" value="/login.jsp"/>
+        <!--成功的页面   配置到主页-->
+        <property name="successUrl" value="/index.jsp"/>
+        <property name="unauthorizedUrl" value="/unauthorized.jsp"/>
+        <!--基于url拦截,使用过滤器进行拦截-->
+        <property name="filterChainDefinitions">
+            <!--自上而下匹配路径-->
+                <value>
+                      /css/** = anon
+                      /images/** = anon
+                        /js/**=anon
+                    /validatecode.jsp*=anon
+                    /login.jsp = anon
+                    /userAction_login.action= anon
+                    /page_base_staff.action =perms["staff"]
+                    /** =authc
+                </value>
+        </property>
+    </bean>
+
+    <!--配置安全管理器-->
+    <bean name="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <!--注入安全数据桥-->
+        <property name="realm" ref="bosrealm"></property>
+    </bean>
+
+    <!--配置自定义的realm(安全数据桥)-->
+    <bean name="bosrealm" class="com.sober.bos.web.realm.BosRealm"></bean>
 </beans>

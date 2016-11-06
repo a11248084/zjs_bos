@@ -39,6 +39,45 @@
 		});
 	});
 </script>
+	<script type="text/javascript">
+		$(function () {
+			//绑定离焦事件
+			$("input[name=telephone]").blur(function () {
+				//发送ajax请求
+				var telephone=this.value;
+				//alert("aa");
+				var url="${pageContext.request.contextPath}/noticebillAction_findCustomerByPhone.action";
+				$.post(url,{"phone":telephone},function (data) {
+						//将客户的信息显示到当前的页面中  回显
+					if(data!=null){
+						$("input[name=customerId]").val(data.id);
+						$("input[name=customerName]").val(data.name);
+						$("input[name=delegater]").val(data.name);
+						$("input[name=pickaddress]").val(data.address);
+					}else {
+						$("input[name=customerId]").val("");
+						$("input[name=customerName]").val("");
+						$("input[name=delegater]").val("");
+						$("input[name=pickaddress]").val("");
+						$("input[name=pickaddress]").val("");
+					}
+
+				});
+			});
+			
+			
+			
+			
+			//为新单按钮添加监听事件
+			$("#save").click(function () {
+				if ($("#noticebillForm").form("validate")){
+					$("#noticebillForm").submit();
+				}
+			});
+		});
+		
+
+	</script>
 </head>
 <body class="easyui-layout" style="visibility:hidden;">
 	<div region="north" style="height:31px;overflow:hidden;" split="false"
@@ -51,7 +90,7 @@
 		</div>
 	</div>
 	<div region="center" style="overflow:auto;padding:5px;" border="false">
-		<form id="noticebillForm" action="" method="post">
+		<form id="noticebillForm" action="${pageContext.request.contextPath}/noticebillAction_save.action" method="post">
 			<table class="table-edit" width="95%" align="center">
 				<tr class="title">
 					<td colspan="4">客户信息</td>
@@ -78,18 +117,18 @@
 				<tr>
 					<td>品名:</td>
 					<td><input type="text" class="easyui-validatebox" name="product"
-						required="true" /></td>
+						 /></td>
 					<td>件数:</td>
 					<td><input type="text" class="easyui-numberbox" name="num"
-						required="true" /></td>
+						 /></td>
 				</tr>
 				<tr>
 					<td>重量:</td>
 					<td><input type="text" class="easyui-numberbox" name="weight"
-						required="true" /></td>
+						 /></td>
 					<td>体积:</td>
 					<td><input type="text" class="easyui-validatebox" name="volume"
-						required="true" /></td>
+						 /></td>
 				</tr>
 				<tr>
 					<td>取件地址</td>
@@ -107,7 +146,7 @@
 				<tr>
 					<td>备注:</td>
 					<td colspan="3"><textarea rows="5" cols="80" type="text" class="easyui-validatebox" name="remark"
-						required="true" ></textarea></td>
+						 ></textarea></td>
 				</tr>
 			</table>
 		</form>
