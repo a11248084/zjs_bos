@@ -19,4 +19,5 @@ public interface ISubareaService {
 
     public  List<Subarea> findByCondition(DetachedCriteria dc);
 
+    public void delete(String id);
 }

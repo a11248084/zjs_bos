@@ -51,6 +51,11 @@ public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
     @Resource
     protected INoticebillService INoticebillService;
     //利用属性驱动获取分页工具条自动传递过来的page(当前页) 和rows(每页查询的条数)
+    @Resource
+    protected IFunctionService functionService;
+
+    @Resource
+    protected IRoleService roleService;
     protected int page;
     protected int rows;
 
@@ -71,9 +76,16 @@ public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
     //在构造方法中动态或的实体类的类型,并通过反射实例化对象
     public BaseAction() {
         //获取父类类型
-        ParameterizedType generciSuperClass = (ParameterizedType)this.getClass().getGenericSuperclass();
+        Type genericSuperclass = this.getClass().getGenericSuperclass();
+        //判断是否是代理对象 如果是 就不能直接强转成参数化类型对象
+        ParameterizedType parameterizedType=null;
+        if (genericSuperclass instanceof ParameterizedType){
+            parameterizedType= (ParameterizedType) genericSuperclass;
+        }else {
+             parameterizedType = (ParameterizedType) this.getClass().getSuperclass().getGenericSuperclass();
+        }
         //获取实际类型参数
-        Type[] actualTypeArguments = generciSuperClass.getActualTypeArguments();
+        Type[] actualTypeArguments = parameterizedType.getActualTypeArguments();
         //实体类型
         Class<T> aClass = (Class<T>) actualTypeArguments[0];
 

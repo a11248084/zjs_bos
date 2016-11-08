@@ -65,7 +65,7 @@
 		rowspan : 2,
 		align : 'center'
 	}, {
-		field : 'birthday',
+		field : 'birthdayStr',
 		title : '生日',
 		width : 120,
 		rowspan : 2,
@@ -99,7 +99,7 @@
 			rownumbers : true,
 			striped : true,
 			toolbar : toolbar,
-			url : "json/users.json",
+			url : "${pageContext.request.contextPath}/userAction_list.action",
 			idField : 'id', 
 			frozenColumns : frozenColumns,
 			columns : columns,
@@ -121,12 +121,12 @@
 	}
 	
 	function doAdd() {
-		alert("添加用户");
+		//alert("添加用户");
 		location.href="${pageContext.request.contextPath}/page_admin_userinfo.action";
 	}
 
 	function doView() {
-		alert("编辑用户");
+		//alert("编辑用户");
 		var item = $('#grid').datagrid('getSelected');
 		console.info(item);
 		//window.location.href = "edit.html";

@@ -76,7 +76,7 @@ public class WorkordermanageAction extends BaseAction<Workordermanage> {
             String prodtype=row.getCell(3).getStringCellValue();
             String sendername=row.getCell(4).getStringCellValue();
                // POI操作Excel时数据Cell有不同的类型，当我们试图从一个数字类型的Cell读取出一个字符串并写入数据库时，就会出现Cannot get a text value from a numeric cell的异常错误，解决办法就是先设置Cell的类型，然后就可以把纯数字作为String类型读进来了：
-                row.createCell(5).setCellType(Cell.CELL_TYPE_STRING);
+                row.getCell(5).setCellType(Cell.CELL_TYPE_STRING);
             String senderphone=row.getCell(5).getStringCellValue();
             String senderaddr=row.getCell(6).getStringCellValue();
             String receivername=row.getCell(7).getStringCellValue();

@@ -2,12 +2,14 @@ package com.sober.bos.service;
 
 import com.sober.bos.dao.IUserDao;
 import com.sober.bos.dao.UserDaoImpl;
+import com.sober.bos.domain.Role;
 import com.sober.bos.domain.User;
 import com.sober.bos.service.base.IUserService;
 import com.sober.bos.utils.MD5Utils;
 import com.sober.bos.utils.loginUser;
 import com.sober.bos.service.base.IUserService;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -16,6 +18,7 @@ import java.util.List;
  * Created by Renhai on 2016/10/30.
  */
 @Component
+@Transactional
 public class UserServiceImpl implements IUserService {
 
 
@@ -37,5 +40,23 @@ public class UserServiceImpl implements IUserService {
         //修改密码
         password=MD5Utils.md5(password);
         userDao.executeNamedQuery("editPassword",password,id);
+    }
+
+    @Override
+    public void save(User model, String[] roleIds) {
+        userDao.save(model);
+        //判断roleIds  防止空指针
+       if(roleIds!=null &&roleIds.length>0){
+           for (String id:roleIds){
+               Role role=new Role();
+               role.setId(id);
+               model.getRoles().add(role);
+           }
+       }
+    }
+
+    @Override
+    public List<User> findAll() {
+        return userDao.findAll();
     }
 }

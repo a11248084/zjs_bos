@@ -32,11 +32,27 @@
 	}
 	
 	function doEdit(){
-		alert("修改...");
+		var rows=$("#grid").datagrid("getSelections");//获得数据表格选中的所有行，返回数据
+		if(rows.length!=1){
+			$.messager.alert("提示信息","亲您选择一行定区在进行操作!","warning");
+		}else{
+			$('#addSubareaWindow').window("open");
+
+		}
+
 	}
 	
 	function doDelete(){
-		alert("删除...");
+		var rows=$("#grid").datagrid("getSelections");//获得数据表格选中的所有行，返回数据
+		if(rows.length!=1){
+			$.messager.alert("提示信息","亲您选择一行定区在进行操作!","warning");
+		}else{
+			var id=rows[0].id;
+			var url="${pageContext.request.contextPath}/subareaAction_delete.action";
+			$.post(url,{'id':id},function(data){
+
+			});
+		}
 	}
 	
 	function doSearch(){
@@ -176,7 +192,19 @@
 	        height: 400,
 	        resizable:false
 	    });
-		
+
+
+		// 添加、修改分区
+		$('#editSubareaWindow').window({
+			title: '添加修改分区',
+			width: 600,
+			modal: true,
+			shadow: true,
+			closed: true,
+			height: 400,
+			resizable:false
+		});
+
 		// 查询分区
 		$('#searchWindow').window({
 	        title: '查询分区',
@@ -214,8 +242,8 @@
 			//关闭查询窗口
 			$("#searchWindow").window("close");
 		});
-		
-		
+
+
 		//给添加分区的保存按钮添加事件
 		$("#save").click(function () {
 			//表单校验 如果通过,提交表单
@@ -226,11 +254,30 @@
 				$.messager.alert("提示信息","您键入的信息有误,请核对后在进行保存操作","warning");
 			}
 		});
+
+
+		//给添加分区的保存按钮添加事件
+		$("#edit").click(function () {
+			//表单校验 如果通过,提交表单
+			var v=$("#editForm").form("validate");
+			if(v){
+				$("#editForm").submit();
+			}else {
+				$.messager.alert("提示信息","您键入的信息有误,请核对后在进行保存操作","warning");
+			}
+		});
 		
 	});
 
-	function doDblClickRow(){
-		alert("双击表格数据...");
+	function doDblClickRow(rowIndex,rowData){
+
+		var rows=$("#grid").datagrid("getSelections");//获得数据表格选中的所有行，返回数据
+		if(rows.length!=1){
+			$.messager.alert("提示信息","亲您选择一行定区在进行操作!","warning");
+		}else{
+			$('#addSubareaWindow').window("open");
+			$("#editForm").form("load",rowData);
+		}
 	}
 </script>	
 </head>
@@ -293,6 +340,66 @@
 			</form>
 		</div>
 	</div>
+
+
+	<!--修改分区 -->
+	<div class="easyui-window" title="分区添加修改" id="editSubareaWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
+		<div style="height:31px;overflow:hidden;" split="false" border="false" >
+			<div class="datagrid-toolbar">
+				<a id="edit" icon="icon-save" href="#" class="easyui-linkbutton" plain="true" >保存</a>
+			</div>
+		</div>
+
+		<div style="overflow:auto;padding:5px;" border="false">
+			<form id="editForm" method="post" action="${pageContext.request.contextPath}/subareaAction_edit.action">
+				<table class="table-edit" width="80%" align="center">
+					<tr class="title">
+						<td colspan="2">分区信息</td>
+					</tr>
+					<tr>
+						<td>分拣编码</td>
+						<td><input type="text" name="id" class="easyui-validatebox" required="true"/></td>
+					</tr>
+					<tr>
+						<td>选择区域</td>
+						<td>
+							<input class="easyui-combobox" name="region.id"
+								   data-options="valueField:'id',textField:'name',url:'${pageContext.request.contextPath}/regionAction_findListByAjax.action'" />
+						</td>
+					</tr>
+					<tr>
+						<td>关键字</td>
+						<td><input type="text" name="addresskey" class="easyui-validatebox" required="true"/></td>
+					</tr>
+					<tr>
+						<td>起始号</td>
+						<td><input type="text" name="startnum" class="easyui-validatebox" required="true"/></td>
+					</tr>
+					<tr>
+						<td>终止号</td>
+						<td><input type="text" name="endnum" class="easyui-validatebox" required="true"/></td>
+					</tr>
+					<tr>
+						<td>单双号</td>
+						<td>
+							<select class="easyui-combobox" name="single" style="width:150px;">
+								<option value="0">单双号</option>
+								<option value="1">单号</option>
+								<option value="2">双号</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>位置信息</td>
+						<td><input type="text" name="position" class="easyui-validatebox" required="true" style="width:250px;"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+
+
+
 	<!-- 查询分区 -->
 	<div class="easyui-window" title="查询分区窗口" id="searchWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
 		<div style="overflow:auto;padding:5px;" border="false">

@@ -7,6 +7,7 @@ import com.sober.bos.web.action.base.BaseAction;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.hibernate.criterion.DetachedCriteria;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.context.annotation.Scope;
@@ -59,8 +60,11 @@ public class StaffAction extends BaseAction<Staff>{
      private String ids;
 
     public void setIds(String ids) {
+
         this.ids = ids;
     }
+
+    @RequiresPermissions("staff-delete")
     //作废操作的方法
     public String delete(){
         staffService.delete(ids);

@@ -102,4 +102,16 @@
 
     <!--配置自定义的realm(安全数据桥)-->
     <bean name="bosrealm" class="com.sober.bos.web.realm.BosRealm"></bean>
+
+
+    <!--配置cglib自动代理-->
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator">
+        <property name="proxyTargetClass" value="true"></property>
+    </bean>
+    <!--配置切面-->
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <!--<property name="securityManager" ref="securityManager"/>-->
+    </bean>
+
+
 </beans>

@@ -40,4 +40,12 @@ public class ISubareaServiceImpl implements ISubareaService {
     public List<Subarea> findByCondition(DetachedCriteria dc) {
         return subareaDao.findByCriteria(dc);
     }
+
+    @Override
+    public void delete(String id) {
+        Subarea byId = subareaDao.findById(id);
+        if (byId!=null) {
+            subareaDao.delete(byId);
+        }
+    }
 }

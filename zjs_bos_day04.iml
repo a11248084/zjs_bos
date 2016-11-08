@@ -31,7 +31,7 @@
       <configuration>
         <datasource-map>
           <unit-entry name="a.xml" value="13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec" />
-          <unit-entry name="noname-applicationContext.xml@1457" value="dataSource" />
+          <unit-entry name="noname-applicationContext.xml@1457" value="13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec" />
         </datasource-map>
         <naming-strategy-map />
       </configuration>

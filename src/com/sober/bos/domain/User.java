@@ -1,145 +1,157 @@
 package com.sober.bos.domain;
 
-import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Renhai on 2016/11/5.
+ * User entity. @author MyEclipse Persistence Tools
  */
-public class User {
-    private String id;
-    private String username;
-    private String password;
-    private Double salary;
-    private Date birthday;
-    private String gender;
-    private String station;
-    private String telephone;
-    private String remark;
-    private Set<Noticebill> noticebills=new HashSet<>();
-    private Set<AuthRole> authRoles=new HashSet<>();
 
+public class User implements java.io.Serializable {
 
-    public String getId() {
-        return id;
-    }
+	// Fields
 
-    public void setId(String id) {
-        this.id = id;
-    }
+	private String id;
+	private String username;
+	private String password;
+	private Double salary;
+	private Date birthday;
+	private String gender;
+	private String station;
+	private String telephone;
+	private String remark;
+	private Set noticebills = new HashSet(0);
+	private Set roles = new HashSet(0);
 
-    public String getUsername() {
-        return username;
-    }
+	public String getBirthdayStr(){
+		if(birthday != null){
+			//将日期类型的birthday属性格式化为yyyy-MM-dd
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+			return sdf.format(birthday);
+		}
+		return "";
+	}
+	
+	// Constructors
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	/** default constructor */
+	public User() {
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	/** minimal constructor */
+	public User(String id, String username, String password) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	/** full constructor */
+	public User(String id, String username, String password, Double salary,
+			Date birthday, String gender, String station, String telephone,
+			String remark, Set noticebills, Set roles) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.salary = salary;
+		this.birthday = birthday;
+		this.gender = gender;
+		this.station = station;
+		this.telephone = telephone;
+		this.remark = remark;
+		this.noticebills = noticebills;
+		this.roles = roles;
+	}
 
-    public Double getSalary() {
-        return salary;
-    }
+	// Property accessors
 
-    public void setSalary(Double salary) {
-        this.salary = salary;
-    }
+	public String getId() {
+		return this.id;
+	}
 
-    public Date getBirthday() {
-        return birthday;
-    }
+	public void setId(String id) {
+		this.id = id;
+	}
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
+	public String getUsername() {
+		return this.username;
+	}
 
-    public String getGender() {
-        return gender;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+	public String getPassword() {
+		return this.password;
+	}
 
-    public String getStation() {
-        return station;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public void setStation(String station) {
-        this.station = station;
-    }
+	public Double getSalary() {
+		return this.salary;
+	}
 
-    public String getTelephone() {
-        return telephone;
-    }
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
+	public Date getBirthday() {
+		return this.birthday;
+	}
 
-    public String getRemark() {
-        return remark;
-    }
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
 
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
+	public String getGender() {
+		return this.gender;
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 
-        User user = (User) o;
+	public String getStation() {
+		return this.station;
+	}
 
-        if (id != null ? !id.equals(user.id) : user.id != null) return false;
-        if (username != null ? !username.equals(user.username) : user.username != null) return false;
-        if (password != null ? !password.equals(user.password) : user.password != null) return false;
-        if (salary != null ? !salary.equals(user.salary) : user.salary != null) return false;
-        if (birthday != null ? !birthday.equals(user.birthday) : user.birthday != null) return false;
-        if (gender != null ? !gender.equals(user.gender) : user.gender != null) return false;
-        if (station != null ? !station.equals(user.station) : user.station != null) return false;
-        if (telephone != null ? !telephone.equals(user.telephone) : user.telephone != null) return false;
-        if (remark != null ? !remark.equals(user.remark) : user.remark != null) return false;
+	public void setStation(String station) {
+		this.station = station;
+	}
 
-        return true;
-    }
+	public String getTelephone() {
+		return this.telephone;
+	}
 
-    @Override
-    public int hashCode() {
-        int result = id != null ? id.hashCode() : 0;
-        result = 31 * result + (username != null ? username.hashCode() : 0);
-        result = 31 * result + (password != null ? password.hashCode() : 0);
-        result = 31 * result + (salary != null ? salary.hashCode() : 0);
-        result = 31 * result + (birthday != null ? birthday.hashCode() : 0);
-        result = 31 * result + (gender != null ? gender.hashCode() : 0);
-        result = 31 * result + (station != null ? station.hashCode() : 0);
-        result = 31 * result + (telephone != null ? telephone.hashCode() : 0);
-        result = 31 * result + (remark != null ? remark.hashCode() : 0);
-        return result;
-    }
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
 
-    public Set<Noticebill> getNoticebills() {
-        return noticebills;
-    }
+	public String getRemark() {
+		return this.remark;
+	}
 
-    public void setNoticebills(Set<Noticebill> noticebills) {
-        this.noticebills = noticebills;
-    }
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
 
-    public Set<AuthRole> getAuthRoles() {
-        return authRoles;
-    }
+	public Set getNoticebills() {
+		return this.noticebills;
+	}
 
-    public void setAuthRoles(Set<AuthRole> authRoles) {
-        this.authRoles = authRoles;
-    }
+	public void setNoticebills(Set noticebills) {
+		this.noticebills = noticebills;
+	}
+
+	public Set getRoles() {
+		return this.roles;
+	}
+
+	public void setRoles(Set roles) {
+		this.roles = roles;
+	}
+
 }

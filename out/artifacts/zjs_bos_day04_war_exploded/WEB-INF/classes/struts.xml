@@ -28,7 +28,13 @@
 -->
     <global-results>
         <result name="login">/login.jsp</result>
+        <result name="unauthorized">/unauthorized.jsp</result>
     </global-results>
+
+    <global-exception-mappings>
+        <exception-mapping exception="org.apache.shiro.authz.UnauthorizedException" result="unauthorized"></exception-mapping>
+    </global-exception-mappings>
+
     <!-- 需要进行权限控制的页面访问 -->
     <action name="page_*_*">
         <result type="dispatcher">/WEB-INF/pages/{1}/{2}.jsp</result>
@@ -37,6 +43,7 @@
     <!--配置用户action模块-->
     <action name="userAction_*" class="userAction" method="{1}">
         <result name="home">/WEB-INF/pages/common/index.jsp</result>
+        <result name="list">/WEB-INF/pages/admin/userlist.jsp</result>
     </action>
 
 
@@ -76,6 +83,17 @@
 
     </action>
 
+    <!--function权限模块的action-->
+    <action name="functionAction_*" class="functionAction" method="{1}">
+        <result name="list">/WEB-INF/pages/admin/function.jsp</result>
+    </action>
+
+    <!--Role模块的Action-->
+    <action name="roleAction_*" class="roleAction" method="{1}">
+        <result name="list">/WEB-INF/pages/admin/role.jsp</result>
+    </action>
+
+    <!--Role模块的Action-->
 </package>
 
 

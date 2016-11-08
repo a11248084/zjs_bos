@@ -116,4 +116,14 @@ public class SubareaAction extends BaseAction<Subarea> {
         writeList2Json(list,excludes);
         return NONE;
     }
+
+
+    //删除操作
+    public String delete(){
+        String id =model.getId();
+        ISubareaService.delete(id);
+        return "list";
+    }
+
+    //修改操作
 }

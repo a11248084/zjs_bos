@@ -39,12 +39,12 @@
 					}
 				}           
 			],
-			url : '',
+			url : '${pageContext.request.contextPath}/functionAction_list.action',
 			columns : [[
 			  {
 				  field : 'id',
 				  title : '编号',
-				  width : 200
+				  width : 60
 			  },
 			  {
 				  field : 'name',
@@ -57,9 +57,17 @@
 				  width : 200
 			  },  
 			  {
-				  field : 'generateMenu',
+				  field : 'generatemenu',
 				  title : '是否生成菜单',
-				  width : 200
+				  width : 200,
+				  formatter:function(data){
+					 if (data=='1'){
+					 	return "是";
+					 }else {
+					 	return "否";
+					 }
+				  }
+
 			  },  
 			  {
 				  field : 'zindex',

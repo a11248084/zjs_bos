@@ -23,6 +23,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by Renhai on 2016/10/30.
@@ -123,6 +124,26 @@ public class UserAction extends BaseAction<User> {
         }
         response.setContentType("text/html;charset=UTF-8");
         response.getWriter().print(flag);
+        return NONE;
+    }
+
+    //属性驱动封装roleIds
+    private  String[] roleIds;
+
+    public void setRoleIds(String[] roleIds) {
+        this.roleIds = roleIds;
+    }
+
+    //保存用户的操作
+    public String save(){
+    userService.save(model,roleIds);
+    return "list";
+    }
+
+    //查询的的功能
+    public String list(){
+         List<User> list= userService.findAll();
+        writeList2Json(list, new String[]{"noticebills","roles"});
         return NONE;
     }
 }

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.sober.bos.domain.Function" table="auth_function" schema="zjs_bos">
+        <id name="id" column="id">
+            <generator class="assigned"></generator>
+        </id>
+        <property name="name" column="name"/>
+        <property name="code" column="code"/>
+        <property name="description" column="description"/>
+        <property name="page" column="page"/>
+        <property name="generatemenu" column="generatemenu"/>
+        <property name="zindex" column="zindex"/>
+
+        <many-to-one name="parentFunction" class="com.sober.bos.domain.Function" fetch="select">
+            <column name="pid" length="32" />
+        </many-to-one>
+
+        <set name="roles" inverse="true" table="role_function" catalog="zjs_bos">
+            <key>
+                <column name="function_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.sober.bos.domain.Role">
+                <column name="role_id" length="32" not-null="true" />
+            </many-to-many>
+        </set>
+
+        <set name="children" inverse="true">
+            <key>
+                <column name="pid" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.sober.bos.domain.Function"/>
+        </set>
+    </class>
+</hibernate-mapping>
