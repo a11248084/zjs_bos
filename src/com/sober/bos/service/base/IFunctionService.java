@@ -1,6 +1,7 @@
 package com.sober.bos.service.base;
 
 import com.sober.bos.domain.Function;
+import com.sober.bos.domain.User;
 
 import java.util.List;
 
@@ -9,4 +10,12 @@ import java.util.List;
  */
 public interface IFunctionService {
     public List<Function> findAll();
+
+    public List<Function> findMenu(User loginUser);
+
+    public List<Function> findParent();
+
+
+    public void save(Function model);
+
 }

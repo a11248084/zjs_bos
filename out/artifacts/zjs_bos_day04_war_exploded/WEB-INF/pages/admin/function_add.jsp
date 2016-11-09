@@ -30,7 +30,10 @@
 	$(function(){
 		// 点击保存
 		$('#save').click(function(){
-			location.href='${pageContext.request.contextPath}/page_admin_function.action';
+			var v=$("#functionForm").form("validate");
+			if(v){
+				$("#functionForm").submit();
+			}
 		});
 	});
 </script>	
@@ -42,7 +45,7 @@
 	</div>
 </div>
 <div data-options="region:'center'">
-	<form id="functionForm" method="post">
+	<form id="functionForm" method="post" action="${pageContext.request.contextPath}/functionAction_save.action">
 				<table class="table-edit" width="80%" align="center">
 					<tr class="title">
 						<td colspan="2">功能权限信息</td>
@@ -79,7 +82,7 @@
 					<tr>
 						<td>父功能点</td>
 						<td>
-							<input name="parentFunction.id" class="easyui-combobox" data-options="valueField:'id',textField:'info',url:''"/>
+							<input name="parentFunction.id" class="easyui-combobox" data-options="valueField:'id',textField:'name',url:'${pageContext.request.contextPath}/functionAction_findParent.action'"/>
 						</td>
 					</tr>
 					<tr>

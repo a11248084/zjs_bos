@@ -16,4 +16,8 @@ public interface IUserService {
 
    public List<User> findAll();
 
+    public void delete(String[] ids);
+
+    public User findUsername(String username);
+
 }

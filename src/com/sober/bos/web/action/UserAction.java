@@ -146,4 +146,40 @@ public class UserAction extends BaseAction<User> {
         writeList2Json(list, new String[]{"noticebills","roles"});
         return NONE;
     }
+
+
+
+    private String[] ids;
+
+    public void setIds(String[] ids) {
+        this.ids = ids;
+    }
+
+    //删除操作
+    public String delete() throws IOException {
+        String flag="0";
+        try {
+            userService.delete(ids);
+        }catch (Exception e){
+            flag="1";
+        }
+
+        response.setContentType("text/html;charset=utf-8");
+        response.getWriter().print(flag);
+        return NONE;
+    }
+
+
+    //检测用户名是否存在
+    public String checkUsername() throws IOException {
+       User user= userService.findUsername(model.getUsername());
+        String flag="1";//表示不存在可以使用用户名
+        if (user!=null){
+            flag="0";
+        }
+
+        response.setContentType("text/html;charset=utf-8");
+        response.getWriter().print(flag);
+        return NONE;
+    }
 }

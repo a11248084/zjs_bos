@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.springsource.net.sf.ehcache-1.6.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/com.springsource.net.sf.ehcache-1.6.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

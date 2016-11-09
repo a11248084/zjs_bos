@@ -31,7 +31,7 @@
       <configuration>
         <datasource-map>
           <unit-entry name="a.xml" value="13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec" />
-          <unit-entry name="noname-applicationContext.xml@1457" value="13e8ef6e-7c5c-4ec3-bd3a-10112f41e9ec" />
+          <unit-entry name="sessionFactory" value="dataSource" />
         </datasource-map>
         <naming-strategy-map />
       </configuration>
@@ -63,5 +63,6 @@
     </orderEntry>
     <orderEntry type="library" name="hessian-4.0.33" level="project" />
     <orderEntry type="library" name="shiro-all-1.2.2" level="project" />
+    <orderEntry type="library" name="com.springsource.net.sf.ehcache-1.6.2" level="project" />
   </component>
 </module>

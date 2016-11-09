@@ -1,6 +1,7 @@
 package com.sober.bos.web.action;
 
 import com.sober.bos.domain.Function;
+import com.sober.bos.utils.loginUser;
 import com.sober.bos.web.action.base.BaseAction;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -20,5 +21,28 @@ public class FunctionAction extends BaseAction<Function> {
         //序列化为json数据 然后返回
         writeList2Json(list, new String[]{"children","roles"});
         return NONE;
+    }
+
+
+    //根据登录用户查询对应的权限菜单数据
+    public String findMenu(){
+       List<Function> list = functionService.findMenu(loginUser.getLoginUser());
+        writeList2Json(list, new String[]{"children","roles"});
+        return NONE;
+    }
+
+    //查询父功能节点
+    public String findParent(){
+        List<Function> list=functionService.findParent();
+        System.out.println(list.size()+"................................");
+        writeList2Json(list, new String[]{"parentFunction","children","roles"});
+        return NONE;
+    }
+
+
+    //保存权限的方法
+    public String save(){
+        functionService.save(model);
+        return "list";
     }
 }

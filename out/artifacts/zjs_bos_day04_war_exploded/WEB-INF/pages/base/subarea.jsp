@@ -269,8 +269,15 @@
 		
 	});
 
-	function doDblClickRow(){
-		alert("双击表格数据...");
+	function doDblClickRow(rowIndex,rowData){
+
+		var rows=$("#grid").datagrid("getSelections");//获得数据表格选中的所有行，返回数据
+		if(rows.length!=1){
+			$.messager.alert("提示信息","亲您选择一行定区在进行操作!","warning");
+		}else{
+			$('#addSubareaWindow').window("open");
+			$("#editForm").form("load",rowData);
+		}
 	}
 </script>	
 </head>

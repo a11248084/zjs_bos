@@ -133,15 +133,24 @@
 	}
 
 	function doDelete() {
-		alert("删除用户");
+		//alert("删除用户");
 		var ids = [];
 		var items = $('#grid').datagrid('getSelections');
 		for(var i=0; i<items.length; i++){
 		    ids.push(items[i].id);	    
 		}
-			
-		console.info(ids.join(","));
-		
+		var idstr=ids.join(",");
+		var url="${pageContext.request.contextPath}/userAction_delete.action";
+		$.post(url,{"ids":idstr},function (data) {
+			if (data=="0"){
+				$.messager.alert("提示信息","删除成功","info");
+			}else{
+				$.messager.alert("提示信息","删除失败","warning");
+
+			}
+
+		});
+
 		$('#grid').datagrid('reload');
 		$('#grid').datagrid('uncheckAll');
 	}

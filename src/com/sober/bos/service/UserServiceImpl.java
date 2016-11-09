@@ -44,6 +44,9 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public void save(User model, String[] roleIds) {
+        String password = model.getPassword();
+        password=MD5Utils.md5(password);
+        model.setPassword(password);
         userDao.save(model);
         //判断roleIds  防止空指针
        if(roleIds!=null &&roleIds.length>0){
@@ -58,5 +61,20 @@ public class UserServiceImpl implements IUserService {
     @Override
     public List<User> findAll() {
         return userDao.findAll();
+    }
+
+    @Override
+    public void delete(String[] ids) {
+        if (ids!=null &ids.length>0){
+            for (String id:ids){
+                User byId = userDao.findById(id);
+                userDao.delete(byId);
+            }
+        }
+    }
+
+    @Override
+    public User findUsername(String username) {
+        return userDao.findByUsername(username);
     }
 }

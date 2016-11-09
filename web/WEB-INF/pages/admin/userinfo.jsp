@@ -48,7 +48,36 @@
        <form id="form" method="post"  action="${pageContext.request.contextPath}/userAction_save.action">
            <table class="table-edit"  width="95%" align="center">
            		<tr class="title"><td colspan="4">基本信息</td></tr>
-	           	<tr><td>用户名:</td><td><input type="text" name="username" id="username" class="easyui-validatebox" required="true" /></td>
+	           	<tr><td>用户名:</td><td><input type="text" name="username" id="username" class="easyui-validatebox" required="true"  validType="checkUsername" /></td>
+
+					<script type="text/javascript">
+						$.extend($.fn.validatebox.defaults.rules,{
+							checkUsername:{
+								validator : function(value){
+										var url="${pageContext.request.contextPath}/userAction_checkUsername.action";
+										var checkR=$.ajax({
+											async : false,
+											catch :false,
+											type : 'post',
+											url :url,
+											data :{
+												username:value
+											}
+
+										}).responseText;
+
+									if(checkR=="1"){
+										return true;
+									}else {
+										return false;
+									}
+								},
+								message: '用户已经被使用'
+							}
+
+						});
+
+					</script>
 					<td>口令:</td><td><input type="password" name="password" id="password" class="easyui-validatebox" required="true" validType="minLength[5]" /></td></tr>
 				<tr class="title"><td colspan="4">其他信息</td></tr>
 	           	<tr><td>工资:</td><td><input type="text" name="salary" id="salary" class="easyui-numberbox" /></td>

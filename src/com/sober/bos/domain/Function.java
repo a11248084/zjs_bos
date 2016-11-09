@@ -89,6 +89,9 @@ public class Function {
         return "0";
     }
 
+    public void setpId(String pId) {
+        this.pId = pId;
+    }
 
     public Set<Function> getChildren() {
         return children;
