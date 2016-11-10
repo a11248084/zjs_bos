@@ -16,6 +16,7 @@ import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.subject.Subject;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
@@ -155,9 +156,11 @@ public class UserAction extends BaseAction<User> {
         this.ids = ids;
     }
 
+
+    @RequiresPermissions("user-delete")
     //删除操作
     public String delete() throws IOException {
-        String flag="0";
+                     String flag="0";
         try {
             userService.delete(ids);
         }catch (Exception e){

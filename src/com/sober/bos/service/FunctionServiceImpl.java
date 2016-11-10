@@ -53,4 +53,12 @@ public class FunctionServiceImpl implements IFunctionService {
             model.setpId(id);
         }
     }
+
+    @Override
+    public void delete(String id) {
+        Function byId = functionDao.findById(id);
+        if (byId!=null){
+            functionDao.delete(byId);
+        }
+    }
 }

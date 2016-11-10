@@ -45,4 +45,11 @@ public class FunctionAction extends BaseAction<Function> {
         functionService.save(model);
         return "list";
     }
+
+
+    //删除的方法
+    public String delete(){
+        functionService.delete(model.getId());
+        return "list";
+    }
 }

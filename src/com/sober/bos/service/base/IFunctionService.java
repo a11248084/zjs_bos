@@ -18,4 +18,6 @@ public interface IFunctionService {
 
     public void save(Function model);
 
+    public void delete(String id);
+
 }
