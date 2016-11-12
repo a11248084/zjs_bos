@@ -64,5 +64,6 @@
     <orderEntry type="library" name="hessian-4.0.33" level="project" />
     <orderEntry type="library" name="shiro-all-1.2.2" level="project" />
     <orderEntry type="library" name="com.springsource.net.sf.ehcache-1.6.2" level="project" />
+    <orderEntry type="library" name="activiti-spring-5.13" level="project" />
   </component>
 </module>

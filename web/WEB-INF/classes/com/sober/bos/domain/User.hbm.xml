@@ -34,13 +34,13 @@
         <property name="remark" type="java.lang.String">
             <column name="remark" />
         </property>
-        <set name="noticebills" inverse="true">
+        <set name="noticebills"  cascade="delete" fetch="join">
             <key>
                 <column name="user_id" length="32" />
             </key>
             <one-to-many class="com.sober.bos.domain.Noticebill" />
         </set>
-        <set name="roles" table="user_role" catalog="zjs_bos">
+        <set name="roles" table="user_role" catalog="zjs_bos" cascade="delete">
             <key>
                 <column name="user_id" length="32" not-null="true" />
             </key>

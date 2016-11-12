@@ -67,7 +67,7 @@
 					<tr>
 						<td>是否生成菜单</td>
 						<td>
-							<select name="generateMenu" class="easyui-combobox">
+							<select name="generatemenu" class="easyui-combobox">
 								<option value="0">不生成</option>
 								<option value="1">生成</option>
 							</select>

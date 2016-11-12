@@ -31,6 +31,13 @@ public class FunctionAction extends BaseAction<Function> {
         return NONE;
     }
 
+
+    public String findSysMenu(){
+        List<Function> list = functionService.findSysMenu(loginUser.getLoginUser());
+        writeList2Json(list, new String[]{"children","roles"});
+        return NONE;
+    }
+
     //查询父功能节点
     public String findParent(){
         List<Function> list=functionService.findParent();

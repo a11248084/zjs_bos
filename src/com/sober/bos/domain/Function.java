@@ -18,6 +18,17 @@ public class Function {
     private Set<Function> children =new HashSet<>();
     private Set<Role> roles =new HashSet<>();
     private String pId;
+
+    private Integer type;
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
     public String getId() {
         return id;
     }

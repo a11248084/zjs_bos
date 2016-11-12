@@ -160,7 +160,7 @@ public class UserAction extends BaseAction<User> {
     @RequiresPermissions("user-delete")
     //删除操作
     public String delete() throws IOException {
-                     String flag="0";
+        String flag="0";
         try {
             userService.delete(ids);
         }catch (Exception e){

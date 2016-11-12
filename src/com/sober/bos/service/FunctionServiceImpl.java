@@ -61,4 +61,9 @@ public class FunctionServiceImpl implements IFunctionService {
             functionDao.delete(byId);
         }
     }
+
+    @Override
+    public List<Function> findSysMenu(User loginUser) {
+        return functionDao.findSysMenu();
+    }
 }

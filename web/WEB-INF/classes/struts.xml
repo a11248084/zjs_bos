@@ -93,7 +93,28 @@
         <result name="list">/WEB-INF/pages/admin/role.jsp</result>
     </action>
 
-    <!--Role模块的Action-->
+    <!--ProcessDefinitionAction-->
+    <action name="processDefinitionAction_*" class="processDefinitionAction" method="{1}">
+        <result name="list">/WEB-INF/pages/workflow/processdefinition_list.jsp</result>
+        <result name="tolist" type="redirectAction">processDefinitionAction_list </result>
+        
+        <!--在网页中查看图片的方法-->
+        <result name="viewpng" type="stream">
+            <param name="contentType">image/png</param>
+            <param name="inputName">pngStream</param>
+        </result>
+    </action>
+
+    <action name="processInstanceAction_*" class="processInstanceAction" method="{1}">
+        <result name="list">/WEB-INF/pages/workflow/processinstance.jsp</result>
+        <result name="showpng">/WEB-INF/pages/workflow/image.jsp</result>
+        <result name="showimage" type="stream">
+
+            <param name="contentType">image/png</param>
+            <param name="inputName">pngStream</param>
+        </result>
+
+    </action>
 </package>
 
 

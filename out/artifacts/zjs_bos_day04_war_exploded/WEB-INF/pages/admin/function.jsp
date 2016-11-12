@@ -28,6 +28,7 @@
 	type="text/javascript"></script>
 <script type="text/javascript">
 	$(function(){
+
 		$("#grid").datagrid({
 			toolbar : [
 				{
@@ -35,9 +36,14 @@
 					text : '添加权限',
 					iconCls : 'icon-add',
 					handler : function(){
-						location.href='${pageContext.request.contextPath}/page_admin_function_add.action';
-					}
-				}           
+						location.href='${pageContext.request.contextPath}/page_admin_function_add.action';}
+				},
+				{
+					id : 'button-delete',
+					text : '删除',
+					iconCls : 'icon-cancel',
+					handler : doDelete
+				}
 			],
 			url : '${pageContext.request.contextPath}/functionAction_list.action',
 			columns : [[
@@ -81,6 +87,26 @@
 			  }
 			]]
 		});
+
+
+
+		//删除的操作
+		function doDelete(){
+			var rows =$("#grid").datagrid("getSelections");
+			if (rows.length!=1){
+				$.messager.alert("提示信息","请选中一行在进行操作","warning");
+			}else {
+				$.messager.confirm("提示信息","您确定要删除该条记录吗",function(r){
+					if(r){
+						var ids=rows[0].id;
+						//alert(ids);
+						location.href="${pageContext.request.contextPath}/functionAction_delete.action?id="+ids;
+					}
+				});
+
+			}
+		}
+
 	});
 </script>	
 </head>

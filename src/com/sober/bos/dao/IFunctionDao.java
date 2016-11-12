@@ -18,4 +18,8 @@ public interface IFunctionDao extends IBaseDao<Function> {
     public List<Function> findMenu(String id);
 
     public  List<Function> findParent();
+
+    public  List<Function> findSysMenu();
+
+
 }

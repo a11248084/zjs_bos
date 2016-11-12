@@ -6,6 +6,7 @@ import com.sober.bos.web.action.base.BaseAction;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -40,6 +41,26 @@ public class RoleAction extends BaseAction<Role> {
     public String list(){
         List<Role> list = roleService.findAll();
         this.writeList2Json(list, new String[]{"users","functions"});
+        return NONE;
+    }
+
+    private String ids;
+
+    public void setIds(String ids) {
+        this.ids = ids;
+    }
+
+    public String delete() throws IOException {
+        String flag="0";
+        try {
+            roleService.delete(ids);
+        }catch (Exception e){
+            flag="1";
+        }
+
+        response.setContentType("text/html;charset=utf-8");
+        response.getWriter().print(flag);
+
         return NONE;
     }
 }

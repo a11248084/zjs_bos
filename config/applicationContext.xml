@@ -26,7 +26,7 @@
 
 
     <!--配置事务管理器-->
-    <bean id="transcationManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory"/>
 
     </bean>
@@ -56,7 +56,7 @@
     <!-- 支持spring注解(引入spring提供的注解解析器) -->
     <context:annotation-config/>
     <!--支持事务注解-->
-    <tx:annotation-driven transaction-manager="transcationManager"/>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 
 
     <!--配置远程服务的代理对象-->
@@ -88,7 +88,7 @@
                     /validatecode.jsp*=anon
                     /login.jsp = anon
                     /userAction_login.action= anon
-                    /page_base_staff.action =perms["staff"]
+                <!--    /page_base_staff.action =perms["staff"]-->
                     /** =authc
                 </value>
         </property>
@@ -121,5 +121,19 @@
         <!--<property name="securityManager" ref="securityManager"/>-->
     </bean>
 
+    <!--配置一个流程引擎配置对象-->
+    <bean id="processEngineConfiguration" class ="org.activiti.spring.SpringProcessEngineConfiguration">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="databaseSchemaUpdate" value="true"></property>
+        <property name="transactionManager" ref="transactionManager"/>
+    </bean>
 
+
+    <!-- 配置一个流程引擎工厂bean，用于创建流程引擎对象 -->
+    <bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+        <property name="processEngineConfiguration" ref="processEngineConfiguration"></property>
+    </bean>
+
+
+    <bean id="repService" factory-bean="processEngine" factory-method="getRepositoryService"></bean>
 </beans>

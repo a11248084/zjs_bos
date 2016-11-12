@@ -36,8 +36,9 @@
 		if(rows.length!=1){
 			$.messager.alert("提示信息","亲您选择一行定区在进行操作!","warning");
 		}else{
-			$('#addSubareaWindow').window("open");
-
+			$('#editSubareaWindow').window("open");
+			$("#editForm").form("load",rows[0]);
+			$('#select1').combobox('select', rowData.region.id);
 		}
 
 	}
@@ -275,8 +276,9 @@
 		if(rows.length!=1){
 			$.messager.alert("提示信息","亲您选择一行定区在进行操作!","warning");
 		}else{
-			$('#addSubareaWindow').window("open");
+			$('#editSubareaWindow').window("open");
 			$("#editForm").form("load",rowData);
+			$('#select1').combobox('select', rowData.region.id);
 		}
 	}
 </script>	
@@ -286,7 +288,7 @@
     	<table id="grid"></table>
 	</div>
 	<!-- 添加 修改分区 -->
-	<div class="easyui-window" title="分区添加修改" id="addSubareaWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
+	<div class="easyui-window" title="分区添加" id="addSubareaWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
 		<div style="height:31px;overflow:hidden;" split="false" border="false" >
 			<div class="datagrid-toolbar">
 				<a id="save" icon="icon-save" href="#" class="easyui-linkbutton" plain="true" >保存</a>
@@ -343,7 +345,7 @@
 
 
 	<!--修改分区 -->
-	<div class="easyui-window" title="分区添加修改" id="editSubareaWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
+	<div class="easyui-window" title="分区修改" id="editSubareaWindow" collapsible="false" minimizable="false" maximizable="false" style="top:20px;left:200px">
 		<div style="height:31px;overflow:hidden;" split="false" border="false" >
 			<div class="datagrid-toolbar">
 				<a id="edit" icon="icon-save" href="#" class="easyui-linkbutton" plain="true" >保存</a>
@@ -358,12 +360,12 @@
 					</tr>
 					<tr>
 						<td>分拣编码</td>
-						<td><input type="text" name="id" class="easyui-validatebox" required="true"/></td>
+						<td><input type="text" name="id" class="easyui-validatebox" value="" required="true"/></td>
 					</tr>
 					<tr>
 						<td>选择区域</td>
 						<td>
-							<input class="easyui-combobox" name="region.id"
+							<input id ="select1"  class="easyui-combobox" name="region.id"
 								   data-options="valueField:'id',textField:'name',url:'${pageContext.request.contextPath}/regionAction_findListByAjax.action'" />
 						</td>
 					</tr>

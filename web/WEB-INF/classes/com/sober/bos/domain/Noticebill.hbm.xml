@@ -55,7 +55,7 @@
         <property name="ordertype" type="java.lang.String">
             <column name="ordertype" length="20" />
         </property>
-        <set name="workbills" inverse="true">
+        <set name="workbills" inverse="true" cascade="delete">
             <key>
                 <column name="noticebill_id" length="32" />
             </key>

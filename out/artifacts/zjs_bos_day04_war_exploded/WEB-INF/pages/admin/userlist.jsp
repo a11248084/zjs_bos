@@ -146,13 +146,9 @@
 				$.messager.alert("提示信息","删除成功","info");
 			}else{
 				$.messager.alert("提示信息","删除失败","warning");
-
 			}
-
 		});
-
 		$('#grid').datagrid('reload');
-		$('#grid').datagrid('uncheckAll');
 	}
 	
 </script>		

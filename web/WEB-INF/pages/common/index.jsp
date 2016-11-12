@@ -1,3 +1,5 @@
+<%@ taglib prefix="apache shiro" uri="http://shiro.apache.org/tags" %>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -59,7 +61,7 @@
 
             // 系统管理菜单加载
             $.ajax({
-                url: '${pageContext.request.contextPath}/json/admin.json',
+                url: '${pageContext.request.contextPath}/functionAction_findSysMenu.action',
                 type: 'POST',
                 dataType: 'text',
                 success: function (data) {
@@ -244,9 +246,11 @@
         <div title="基本功能" data-options="iconCls:'icon-mini-add'" style="overflow:auto">
             <ul id="treeMenu" class="ztree"></ul>
         </div>
+        <shiro:hasPermission name="superfunction">
         <div title="系统管理" data-options="iconCls:'icon-mini-add'" style="overflow:auto">
             <ul id="adminMenu" class="ztree"></ul>
         </div>
+       </shiro:hasPermission>
     </div>
 </div>
 <div data-options="region:'center'">

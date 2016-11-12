@@ -20,4 +20,6 @@ public interface IFunctionService {
 
     public void delete(String id);
 
+    public List<Function> findSysMenu(User loginUser);
+
 }

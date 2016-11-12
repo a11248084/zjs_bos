@@ -1,5 +1,6 @@
 package com.sober.bos.service;
 
+import com.sober.bos.dao.IRoleDao;
 import com.sober.bos.dao.IUserDao;
 import com.sober.bos.dao.UserDaoImpl;
 import com.sober.bos.domain.Role;
@@ -8,6 +9,8 @@ import com.sober.bos.service.base.IUserService;
 import com.sober.bos.utils.MD5Utils;
 import com.sober.bos.utils.loginUser;
 import com.sober.bos.service.base.IUserService;
+import org.activiti.engine.ProcessEngine;
+import org.activiti.engine.impl.persistence.entity.UserEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +27,12 @@ public class UserServiceImpl implements IUserService {
 
     @Resource
     private IUserDao userDao;
+
+    @Resource
+    private ProcessEngine processEngine;
+    @Resource
+    private IRoleDao roleDao;
+
 
     @Override
     public User login(User model) {
@@ -42,18 +51,26 @@ public class UserServiceImpl implements IUserService {
         userDao.executeNamedQuery("editPassword",password,id);
     }
 
+    //同步数据到activiti框架中
     @Override
     public void save(User model, String[] roleIds) {
         String password = model.getPassword();
         password=MD5Utils.md5(password);
         model.setPassword(password);
         userDao.save(model);
+
+        org.activiti.engine.identity.User user=new UserEntity();
+        user.setId(model.getId());
+        processEngine.getIdentityService().saveUser(user);
+
         //判断roleIds  防止空指针
        if(roleIds!=null &&roleIds.length>0){
            for (String id:roleIds){
-               Role role=new Role();
-               role.setId(id);
+               /*Role role=new Role();
+               role.setId(id);*/
+               Role role = roleDao.findById(id);
                model.getRoles().add(role);
+               processEngine.getIdentityService().createMembership(user.getId(),role.getName());
            }
        }
     }

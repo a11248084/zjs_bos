@@ -21,14 +21,16 @@ public class FunctionDaoImpl extends BaseDaoImpl<Function> implements IFunctionD
 
     @Override
     public List<Function> findAllMenu() {
-        String hql="from Function f where generatemenu ='1' order by f.zindex  desc ";
-        return this.getHibernateTemplate().find(hql);
+        String hql="from Function f where f.generatemenu= '1' and f.type != 1 order by f.zindex desc ";
+        List<Function> list = this.getHibernateTemplate().find(hql);
+        //获取
+        return  list;
     }
 
     @Override
     public List<Function> findMenu(String id) {
-        String hql="select  distinct f from Function f left outer join fetch f.roles r left outer join fetch r.users u where u.id = ? and  f.generatemenu ='1' order by f.zindex desc ";
-        return  this.getHibernateTemplate().find(hql,id);
+        String hql="select  distinct f from Function f left outer join fetch f.roles r left outer join fetch r.users u where u.id = ? and  f.generatemenu ='1' and f.type != 1 and f.parentFunction.id!= ?  and f.id!=? order by f.zindex desc ";
+        return  this.getHibernateTemplate().find(hql,id,"100","100");
     }
 
     @Override
@@ -41,6 +43,12 @@ public class FunctionDaoImpl extends BaseDaoImpl<Function> implements IFunctionD
 
      String hql="from Function f left join fetch f.parentFunction ff where ff.id is null";
        return this.getHibernateTemplate().find(hql);
+    }
+
+    @Override
+    public List<Function> findSysMenu() {
+        String hql="from Function f where f.generatemenu= '1' and f.type = 1 order by f.zindex desc ";
+        return this.getHibernateTemplate().find(hql);
     }
 }
 /*

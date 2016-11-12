@@ -14,7 +14,7 @@
         <property name="page" column="page"/>
         <property name="generatemenu" column="generatemenu"/>
         <property name="zindex" column="zindex"/>
-
+        <property name="type" column="type"/>
         <many-to-one name="parentFunction" class="com.sober.bos.domain.Function" fetch="select">
             <column name="pid" length="32" />
         </many-to-one>

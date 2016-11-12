@@ -45,7 +45,13 @@
 					handler : function(){
 						location.href='${pageContext.request.contextPath}/page_admin_role_add.action';
 					}
-				}           
+				},
+				{
+					id : 'deete',
+					text : '删除角色',
+					iconCls : 'icon-delete',
+					handler : doDelete
+				}
 			],
 			url : '${pageContext.request.contextPath}/roleAction_findAll.action',
 			columns : [[
@@ -66,7 +72,40 @@
 				} 
 			]]
 		});
+
+
+		function doDelete() {
+			//alert("删除角色");
+			var ids = [];
+			var items = $('#grid').datagrid('getSelections');
+			for(var i=0; i<items.length; i++){
+				ids.push(items[i].id);
+			}
+			var idstr=ids.join(",");
+			var url="${pageContext.request.contextPath}/roleAction_delete.action";
+			$.post(url,{"ids":idstr},function (data) {
+				if (data=="0"){
+					$.messager.alert("提示信息","删除成功","info");
+				}else{
+					$.messager.alert("提示信息","删除失败","warning");
+
+				}
+
+			});
+			$('#grid').datagrid('reload');
+			$('#grid').datagrid('uncheckAll');
+		}
+
+
+
+
+
 	});
+
+
+
+
+
 </script>	
 </head>
 <body class="easyui-layout">

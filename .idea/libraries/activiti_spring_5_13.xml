@@ -1,0 +1,36 @@
+<component name="libraryTable">
+  <library name="activiti-spring-5.13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-spring-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-rest-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-bpmn-model-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-lang-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-pool-1.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-bpmn-layout-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-json-converter-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-simple-workflow-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/commons-email-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activation-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-bpmn-converter-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-common-rest-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/activiti-engine-5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/h2-1.3.170.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jackson-core-asl-1.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jackson-mapper-asl-1.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/javaGeom-0.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jcl-over-slf4j-1.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/joda-time-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/jgraphx-1.10.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mail-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mybatis-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/org.restlet.ext.fileupload-2.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/org.restlet.ext.jackson-2.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/org.restlet.ext.servlet-2.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/org.restlet-2.0.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

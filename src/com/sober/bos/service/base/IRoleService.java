@@ -11,4 +11,8 @@ public interface IRoleService {
     public void save(Role model,String functionIds);
 
     public List<Role> findAll();
+
+    public void delete(String ids);
+
+
 }
