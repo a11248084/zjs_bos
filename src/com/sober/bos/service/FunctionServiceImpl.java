@@ -34,7 +34,7 @@ public class FunctionServiceImpl implements IFunctionService {
             //超级管理员  查询所有数据
           list= functionDao.findAllMenu();
         }else {
-            //普通用户 查询对应的全线数据
+            //普通用户 查询对应的权限数据
             list =functionDao.findMenu(loginUser.getId());
         }
         return list;

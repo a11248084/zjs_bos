@@ -12,7 +12,7 @@
             src="${pageContext.request.contextPath }/js/jquery-1.8.3.js"></script>
     <!-- 导入easyui类库 -->
     <link id="easyuiTheme" rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath }/js/easyui/themes/default/easyui.css">
+          href="${pageContext.request.contextPath }/js/easyui/themes/black/easyui.css">
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath }/js/easyui/themes/icon.css">
     <link rel="stylesheet" type="text/css"

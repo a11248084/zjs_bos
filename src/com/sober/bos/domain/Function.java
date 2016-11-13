@@ -18,7 +18,6 @@ public class Function {
     private Set<Function> children =new HashSet<>();
     private Set<Role> roles =new HashSet<>();
     private String pId;
-
     private Integer type;
 
     public Integer getType() {

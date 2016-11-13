@@ -27,7 +27,7 @@ public class FunctionAction extends BaseAction<Function> {
     //根据登录用户查询对应的权限菜单数据
     public String findMenu(){
        List<Function> list = functionService.findMenu(loginUser.getLoginUser());
-        writeList2Json(list, new String[]{"children","roles"});
+        writeList2Json(list, new String[]{"children","roles","parentFunction"});
         return NONE;
     }
 

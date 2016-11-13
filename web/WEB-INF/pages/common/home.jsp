@@ -30,7 +30,7 @@
 			title : '公共栏',
 			height : 255,
 			collapsible : true,
-			href:'page_portal_gonggao.action'
+			href:'page_portal_gonggao.action',
 		}, {
 			id : 'p2',
 			title : '代办事宜',
